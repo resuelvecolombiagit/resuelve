@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/resuelve",
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
