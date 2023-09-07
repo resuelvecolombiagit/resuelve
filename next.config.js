@@ -2,10 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  images: {
-    //loader: "imgix",
-    //path: "https://SodiaOff.github.io/",
-  },
   webpack(config, options) {
     const { isServer } = options;
     config.module.rules.push({
