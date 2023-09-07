@@ -30,43 +30,43 @@ export default function SectionComponents() {
           <GridItem xs={12} sm={12} md={6} lg={6} className={classes.mlAuto}>
             <div className={classes.imageContainer}>
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png")}
                 alt="macbook"
                 className={classes.componentsMacbook}
                 layout="fill"
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/table.jpg")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/table.jpg")}
                 alt="macbook"
                 layout="fill"
                 className={classes.shoppingCart}
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/share-btn.png")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/share-btn.png")}
                 alt="macbook"
                 layout="fill"
                 className={classes.shareButton}
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg")}
                 alt="macbook"
                 layout="fill"
                 className={classes.cardImage}
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg")}
                 alt="macbook"
                 layout="fill"
                 className={classes.twitterImage}
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg")}
                 alt="macbook"
                 layout="fill"
                 className={classes.iconsImage}
               />
               <Image
-                src={require("/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg")}
+                src={require("../../public/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg")}
                 alt="macbook"
                 layout="fill"
                 className={classes.repostImage}

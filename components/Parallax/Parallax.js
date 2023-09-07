@@ -42,7 +42,8 @@ export default function Parallax(props) {
       className={parallaxClasses}
       style={{
         ...style,
-        backgroundImage: "url(" + require("/img/nextjs_header.jpg") + ")",
+        backgroundImage:
+          "url(" + require("../../public/img/nextjs_header.jpg") + ")",
         transform: transform,
       }}
     >
