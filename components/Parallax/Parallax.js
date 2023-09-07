@@ -1,11 +1,9 @@
 import React from "react";
-// nodejs library that concatenates classes
-import classNames from "classnames";
-// nodejs library to set properties for components
 import PropTypes from "prop-types";
 import makeStyles from "@mui/styles/makeStyles";
+import Image from "next/image"; // Importa Image de Next.js
+import classNames from "classnames";
 
-// core components
 import styles from "/styles/jss/nextjs-material-kit-pro/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -38,15 +36,13 @@ export default function Parallax(props) {
     [className]: className !== undefined,
   });
   return (
-    <div
-      className={parallaxClasses}
-      style={{
-        ...style,
-        backgroundImage:
-          "url(" + require("../../public/img/nextjs_header.jpg") + ")",
-        transform: transform,
-      }}
-    >
+    <div className={parallaxClasses} style={{ ...style }}>
+      {/* Utiliza Image de Next.js para cargar y mostrar la imagen */}
+      <Image
+        src="/img/nextjs_header.jpg" // Ruta relativa a la carpeta 'public'
+        alt="Next.js Header Image"
+        layout="fill" // Esto ajustará la imagen al tamaño del contenedor
+      />
       {children}
     </div>
   );
