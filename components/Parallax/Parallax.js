@@ -3,7 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 // core components
 import styles from "/styles/jss/nextjs-material-kit-pro/components/parallaxStyle.js";
@@ -35,15 +35,15 @@ export default function Parallax(props) {
     [classes.parallax]: true,
     [classes[filter + "Color"]]: filter !== undefined,
     [classes.small]: small,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   return (
     <div
       className={parallaxClasses}
       style={{
         ...style,
-        backgroundImage: "url(" + image + ")",
-        transform: transform
+        backgroundImage: "url(" + require("/img/nextjs_header.jpg") + ")",
+        transform: transform,
       }}
     >
       {children}
@@ -60,10 +60,10 @@ Parallax.propTypes = {
     "info",
     "success",
     "warning",
-    "danger"
+    "danger",
   ]),
   children: PropTypes.node,
   style: PropTypes.string,
   image: PropTypes.string,
-  small: PropTypes.bool
+  small: PropTypes.bool,
 };
