@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/resuelve",
-  assetPrefix: "/resuelve",
+  images: {
+    loader: "imgix",
+    path: "https://resuelvecolombiagit.github.io/resuelve/",
+  },
 };
 
 module.exports = nextConfig;
