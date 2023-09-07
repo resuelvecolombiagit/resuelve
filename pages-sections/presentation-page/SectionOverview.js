@@ -121,7 +121,11 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <Image src="/img/assets-for-demo/test1.jpg" alt="..." />
+                        <Image
+                          src="/img/assets-for-demo/test1.jpg"
+                          alt="..."
+                          layout="fill"
+                        />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -160,7 +164,11 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <Image src="/img/assets-for-demo/test2.jpg" alt="..." />
+                        <Image
+                          src="/img/assets-for-demo/test2.jpg"
+                          alt="..."
+                          layout="fill"
+                        />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -200,7 +208,11 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <Image src="/img/assets-for-demo/test3.jpg" alt="..." />
+                        <Image
+                          src="/img/assets-for-demo/test3.jpg"
+                          alt="..."
+                          layout="fill"
+                        />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -239,24 +251,28 @@ export default function SectionOverview() {
                 <Image
                   src="/img/assets-for-demo/ourClients/vodafone.jpg"
                   alt="vodafone"
+                  layout="fill"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
                 <Image
                   src="/img/assets-for-demo/ourClients/microsoft.jpg"
                   alt="microsoft"
+                  layout="fill"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
                 <Image
                   src="/img/assets-for-demo/ourClients/harvard.jpg"
                   alt="harvard"
+                  layout="fill"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
                 <Image
                   src="/img/assets-for-demo/ourClients/stanford.jpg"
                   alt="stanford"
+                  layout="fill"
                 />
               </GridItem>
             </GridContainer>

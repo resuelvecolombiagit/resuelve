@@ -41,6 +41,7 @@ export default function SectionContent() {
                     src="/img/assets-for-demo/presentationViewSectionComponent/ipad-comments.jpg"
                     alt="iPad comments"
                     className={classes.areaImg}
+                    layout="fill"
                   />
                 </ScrollAnimation>
               </div>
@@ -50,6 +51,7 @@ export default function SectionContent() {
                     src="/img/assets-for-demo/presentationViewSectionComponent/ipad-table.jpg"
                     alt="iPad table"
                     className={classes.infoImg}
+                    layout="fill"
                   />
                 </ScrollAnimation>
               </div>
@@ -57,6 +59,7 @@ export default function SectionContent() {
                 className={classes.ipadImg}
                 src="/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg"
                 alt="iPad"
+                layout="fill"
               />
             </div>
           </GridItem>

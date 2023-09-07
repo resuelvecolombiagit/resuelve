@@ -33,35 +33,42 @@ export default function SectionComponents() {
                 src="/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png"
                 alt="macbook"
                 className={classes.componentsMacbook}
+                layout="fill"
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/table.jpg"
                 alt="macbook"
+                layout="fill"
                 className={classes.shoppingCart}
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/share-btn.png"
                 alt="macbook"
+                layout="fill"
                 className={classes.shareButton}
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg"
                 alt="macbook"
+                layout="fill"
                 className={classes.cardImage}
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg"
                 alt="macbook"
+                layout="fill"
                 className={classes.twitterImage}
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg"
                 alt="macbook"
+                layout="fill"
                 className={classes.iconsImage}
               />
               <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg"
                 alt="macbook"
+                layout="fill"
                 className={classes.repostImage}
               />
             </div>

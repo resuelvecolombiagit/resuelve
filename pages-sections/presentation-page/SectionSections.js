@@ -36,6 +36,7 @@ export default function SectionSections() {
                   src={`/img/assets-for-demo/sections/${el}.jpg`}
                   alt={el}
                   key={el[index]}
+                  layout="fill"
                 />
               </GridItem>
             );

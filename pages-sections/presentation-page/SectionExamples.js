@@ -42,6 +42,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/about-us"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-about-us.jpg"
                   alt="About us"
                   className={classes.imgCard}
@@ -52,6 +53,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/landing-page"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-landing.jpg"
                   alt="Landing Page"
                   className={classes.imgCard}
@@ -62,6 +64,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/contact-us"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-contact.jpg"
                   alt="Contact us"
                   className={classes.imgCard}
@@ -74,6 +77,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/blog-post"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-blog-post.jpg"
                   alt="Blog Post"
                   className={classes.imgCard}
@@ -84,6 +88,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/product"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-product.jpg"
                   alt="Product Pge"
                   className={classes.imgCard}
@@ -94,6 +99,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/login"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-login.jpg"
                   alt="Login Page"
                   className={classes.imgCard}
@@ -106,6 +112,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/pricing"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-pricing.jpg"
                   alt="Pricing Page"
                   className={classes.imgCard}
@@ -116,6 +123,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/signup"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-register.jpg"
                   alt="Signup Page"
                   className={classes.imgCard}
@@ -126,6 +134,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/profile"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-profile.jpg"
                   alt="Profile Page"
                   className={classes.imgCard}
@@ -136,6 +145,7 @@ export default function SectionExamples() {
             <Card className={classes.imgCardExtended}>
               <Link href={"/blog-posts"}>
                 <Image
+                  layout="fill"
                   src="/img/assets-for-demo/example-pages/ex-blog-posts.jpg"
                   alt="Blog Posts"
                   className={classes.imgCard}

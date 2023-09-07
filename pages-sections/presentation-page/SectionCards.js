@@ -19,7 +19,11 @@ export default function SectionCards() {
         <GridContainer justifyContent="center">
           <GridItem md={7} sm={7}>
             <div className={classes.imageContainer}>
-              <Image src="/img/assets-for-demo/cards-test.png" alt="views" />
+              <Image
+                src="/img/assets-for-demo/cards-test.png"
+                alt="views"
+                layout="fill"
+              />
             </div>
           </GridItem>
           <GridItem md={4} sm={5} className={classes.mlAuto}>
