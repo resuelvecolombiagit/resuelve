@@ -10,6 +10,7 @@ import Card from "/components/Card/Card.js";
 import CardAvatar from "/components/Card/CardAvatar.js";
 
 import sectionBlogInfoStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionBlogInfoStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionBlogInfoStyle);
 
@@ -45,7 +46,7 @@ export default function SectionBlogInfo() {
             <GridContainer>
               <GridItem xs={12} sm={2} md={2}>
                 <CardAvatar plain profile>
-                  <img src="/img/faces/card-profile1-square.jpg" alt="..." />
+                  <Image src="/img/faces/card-profile1-square.jpg" alt="..." />
                 </CardAvatar>
               </GridItem>
               <GridItem xs={12} sm={8} md={8}>

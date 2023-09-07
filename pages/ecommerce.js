@@ -2,7 +2,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -25,6 +25,7 @@ import SectionProducts from "/pages-sections/ecommerce/SectionProducts.js";
 import SectionBlog from "/pages-sections/ecommerce/SectionBlog.js";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/pages/ecommerceStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -43,7 +44,7 @@ export default function EcommercePage() {
         color="transparent"
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "info",
         }}
       />
       <Parallax image="/img/examples/clark-street-merc.jpg" filter="dark" small>
@@ -106,7 +107,7 @@ export default function EcommercePage() {
                           id="emailPreFooter"
                           formControlProps={{
                             fullWidth: true,
-                            className: classes.cardForm
+                            className: classes.cardForm,
                           }}
                           inputProps={{
                             startAdornment: (
@@ -114,7 +115,7 @@ export default function EcommercePage() {
                                 <Mail />
                               </InputAdornment>
                             ),
-                            placeholder: "Your Email..."
+                            placeholder: "Your Email...",
                           }}
                         />
                       </GridItem>
@@ -239,7 +240,7 @@ export default function EcommercePage() {
           <GridItem xs={12} sm={4} md={4}>
             <h5>Instagram Feed</h5>
             <div className={classes.galleryFeed}>
-              <img
+              <Image
                 src="/img/faces/card-profile6-square.jpg"
                 className={classNames(
                   classes.img,
@@ -248,7 +249,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/christian.jpg"
                 className={classNames(
                   classes.img,
@@ -257,7 +258,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/card-profile4-square.jpg"
                 className={classNames(
                   classes.img,
@@ -266,7 +267,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/card-profile1-square.jpg"
                 className={classNames(
                   classes.img,
@@ -275,7 +276,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/marc.jpg"
                 className={classNames(
                   classes.img,
@@ -284,7 +285,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/kendall.jpg"
                 className={classNames(
                   classes.img,
@@ -293,7 +294,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/card-profile5-square.jpg"
                 className={classNames(
                   classes.img,
@@ -302,7 +303,7 @@ export default function EcommercePage() {
                 )}
                 alt="..."
               />
-              <img
+              <Image
                 src="/img/faces/card-profile2-square.jpg"
                 className={classNames(
                   classes.img,

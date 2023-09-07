@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 // import  from "@mui/icons-material/";
 // core components
@@ -14,6 +14,7 @@ import Button from "/components/CustomButtons/Button.js";
 import Muted from "/components/Typography/Muted.js";
 
 import teamsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/teamsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(teamsStyle);
 
@@ -46,7 +47,7 @@ export default function SectionTeams({ ...rest }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img
+                    <Image
                       src="/img/faces/marc.jpg"
                       alt="..."
                       className={classes.img}
@@ -101,7 +102,7 @@ export default function SectionTeams({ ...rest }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img
+                    <Image
                       src="/img/faces/kendall.jpg"
                       alt="..."
                       className={classes.img}
@@ -156,7 +157,7 @@ export default function SectionTeams({ ...rest }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img
+                    <Image
                       src="/img/faces/christian.jpg"
                       alt="..."
                       className={classes.img}
@@ -201,7 +202,7 @@ export default function SectionTeams({ ...rest }) {
               <Card profile plain>
                 <CardAvatar profile plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/avatar.jpg" alt="..." />
+                    <Image src="/img/faces/avatar.jpg" alt="..." />
                   </a>
                 </CardAvatar>
                 <CardBody>
@@ -277,13 +278,13 @@ export default function SectionTeams({ ...rest }) {
               <Card plain profile>
                 <CardHeader image plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/card-profile1.jpg" alt="..." />
+                    <Image src="/img/examples/card-profile1.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/card-profile1.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -310,13 +311,13 @@ export default function SectionTeams({ ...rest }) {
               <Card plain profile>
                 <CardHeader image plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/card-profile2.jpg" alt="..." />
+                    <Image src="/img/examples/card-profile2.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/card-profile2.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -343,13 +344,13 @@ export default function SectionTeams({ ...rest }) {
               <Card plain profile>
                 <CardHeader image plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/card-profile4.jpg" alt="..." />
+                    <Image src="/img/examples/card-profile4.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/card-profile4.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -400,7 +401,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile1-square.jpg"
                           alt="..."
                         />
@@ -410,7 +411,7 @@ export default function SectionTeams({ ...rest }) {
                         style={{
                           backgroundImage:
                             "url('/img/faces/card-profile1-square.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -447,7 +448,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile6-square.jpg"
                           alt="..."
                         />
@@ -457,7 +458,7 @@ export default function SectionTeams({ ...rest }) {
                         style={{
                           backgroundImage:
                             "url('/img/faces/card-profile6-square.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -499,7 +500,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile4-square.jpg"
                           alt="..."
                         />
@@ -509,7 +510,7 @@ export default function SectionTeams({ ...rest }) {
                         style={{
                           backgroundImage:
                             "url('/img/faces/card-profile4-square.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -546,7 +547,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile2-square.jpg"
                           alt="..."
                         />
@@ -556,7 +557,7 @@ export default function SectionTeams({ ...rest }) {
                         style={{
                           backgroundImage:
                             "url('/img/faces/card-profile2-square.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -619,7 +620,10 @@ export default function SectionTeams({ ...rest }) {
               <Card profile>
                 <CardAvatar profile>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile1-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile1-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody>
@@ -650,7 +654,10 @@ export default function SectionTeams({ ...rest }) {
               <Card profile>
                 <CardAvatar profile>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile2-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile2-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody>
@@ -678,7 +685,10 @@ export default function SectionTeams({ ...rest }) {
               <Card profile>
                 <CardAvatar profile>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile4-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile4-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody>
@@ -739,7 +749,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile1-square.jpg"
                           alt="..."
                         />
@@ -778,7 +788,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile6-square.jpg"
                           alt="..."
                         />
@@ -822,7 +832,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile4-square.jpg"
                           alt="..."
                         />
@@ -861,7 +871,7 @@ export default function SectionTeams({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/card-profile2-square.jpg"
                           alt="..."
                         />

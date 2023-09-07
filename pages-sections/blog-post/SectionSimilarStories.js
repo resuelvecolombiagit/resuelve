@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import TrendingUp from "@mui/icons-material/TrendingUp";
 // core components
@@ -13,6 +13,7 @@ import Success from "/components/Typography/Success.js";
 import Danger from "/components/Typography/Danger.js";
 
 import sectionSimilarStoriesStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionSimilarStoriesStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionSimilarStoriesStyle);
 
@@ -32,13 +33,13 @@ export default function SectionSimilarStories() {
                 <Card blog>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img src="/img/examples/blog6.jpg" alt="..." />
+                      <Image src="/img/examples/blog6.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog6.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -65,13 +66,13 @@ export default function SectionSimilarStories() {
                 <Card blog>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img src="/img/examples/blog8.jpg" alt="..." />
+                      <Image src="/img/examples/blog8.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog8.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -97,13 +98,13 @@ export default function SectionSimilarStories() {
                 <Card blog>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img src="/img/examples/blog7.jpg" alt="..." />
+                      <Image src="/img/examples/blog7.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog7.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>

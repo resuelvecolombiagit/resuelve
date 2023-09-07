@@ -29,6 +29,7 @@ import Clearfix from "/components/Clearfix/Clearfix.js";
 import Button from "/components/CustomButtons/Button.js";
 
 import profilePageStyle from "/styles/jss/nextjs-material-kit-pro/pages/profilePageStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(profilePageStyle);
 
@@ -68,7 +69,7 @@ export default function ProfilePage({ ...rest }) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div>
-                  <img
+                  <Image
                     src="/img/faces/christian.jpg"
                     alt="..."
                     className={imageClasses}
@@ -289,7 +290,7 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img
+                                    <Image
                                       src="/img/faces/avatar.jpg"
                                       alt="..."
                                     />
@@ -333,7 +334,10 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img src="/img/faces/marc.jpg" alt="..." />
+                                    <Image
+                                      src="/img/faces/marc.jpg"
+                                      alt="..."
+                                    />
                                   </a>
                                   <div
                                     className={classes.coloredShadow}
@@ -376,7 +380,7 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img
+                                    <Image
                                       src="/img/faces/kendall.jpg"
                                       alt="..."
                                     />
@@ -419,7 +423,7 @@ export default function ProfilePage({ ...rest }) {
                               <GridItem xs={12} sm={12} md={5}>
                                 <CardHeader image plain>
                                   <a href="#pablo">
-                                    <img
+                                    <Image
                                       src="/img/faces/card-profile2-square.jpg"
                                       alt="..."
                                     />
@@ -460,29 +464,29 @@ export default function ProfilePage({ ...rest }) {
                   tabContent: (
                     <GridContainer justifyContent="center">
                       <GridItem xs={12} sm={12} md={3}>
-                        <img
+                        <Image
                           alt="..."
                           src="/img/examples/mariya-georgieva.jpg"
                           className={navImageClasses}
                         />
-                        <img
+                        <Image
                           alt="..."
                           src="/img/examples/clem-onojegaw.jpg"
                           className={navImageClasses}
                         />
                       </GridItem>
                       <GridItem xs={12} sm={12} md={3}>
-                        <img
+                        <Image
                           alt="..."
                           src="/img/examples/clem-onojeghuo.jpg"
                           className={navImageClasses}
                         />
-                        <img
+                        <Image
                           alt="..."
                           src="/img/examples/olu-eletu.jpg"
                           className={navImageClasses}
                         />
-                        <img
+                        <Image
                           alt="..."
                           src="/img/examples/cynthia-del-rio.jpg"
                           className={navImageClasses}

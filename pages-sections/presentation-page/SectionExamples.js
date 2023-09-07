@@ -7,14 +7,15 @@ import classNames from "classnames";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Card from "/components/Card/Card.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 import examplesStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/examplesStyle.js";
 import imagesStyles from "/styles/jss/nextjs-material-kit-pro/imagesStyles.js";
+import Image from "next/image";
 
 const styles = {
   ...examplesStyle,
-  ...imagesStyles
+  ...imagesStyles,
 };
 
 const useStyles = makeStyles(styles);
@@ -40,7 +41,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>About Us</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/about-us"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-about-us.jpg"
                   alt="About us"
                   className={classes.imgCard}
@@ -50,7 +51,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Landing Page</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/landing-page"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-landing.jpg"
                   alt="Landing Page"
                   className={classes.imgCard}
@@ -60,7 +61,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Contact Us</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/contact-us"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-contact.jpg"
                   alt="Contact us"
                   className={classes.imgCard}
@@ -72,7 +73,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Blog Post</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/blog-post"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-blog-post.jpg"
                   alt="Blog Post"
                   className={classes.imgCard}
@@ -82,7 +83,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Product Page</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/product"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-product.jpg"
                   alt="Product Pge"
                   className={classes.imgCard}
@@ -92,7 +93,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Login Page</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/login"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-login.jpg"
                   alt="Login Page"
                   className={classes.imgCard}
@@ -104,7 +105,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Pricing Pge</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/pricing"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-pricing.jpg"
                   alt="Pricing Page"
                   className={classes.imgCard}
@@ -114,7 +115,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Signup Page</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/signup"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-register.jpg"
                   alt="Signup Page"
                   className={classes.imgCard}
@@ -124,7 +125,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Profile Page</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/profile"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-profile.jpg"
                   alt="Profile Page"
                   className={classes.imgCard}
@@ -134,7 +135,7 @@ export default function SectionExamples() {
             <h4 className={classes.title}>Blog Posts</h4>
             <Card className={classes.imgCardExtended}>
               <Link href={"/blog-posts"}>
-                <img
+                <Image
                   src="/img/assets-for-demo/example-pages/ex-blog-posts.jpg"
                   alt="Blog Posts"
                   className={classes.imgCard}

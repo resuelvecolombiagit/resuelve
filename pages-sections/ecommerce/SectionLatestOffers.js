@@ -9,12 +9,13 @@ import CardHeader from "/components/Card/CardHeader.js";
 import CardBody from "/components/Card/CardBody.js";
 import CardFooter from "/components/Card/CardFooter.js";
 import Button from "/components/CustomButtons/Button.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import Tooltip from "@mui/material/Tooltip";
 // @material-ui icons
 import Favorite from "@mui/icons-material/Favorite";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/pages/ecommerceSections/latestOffersStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -29,13 +30,13 @@ export default function SectionLatestOffers() {
             <Card product plain>
               <CardHeader image plain>
                 <a href="#pablo">
-                  <img src="/img/examples/gucci.jpg" alt="..." />
+                  <Image src="/img/examples/gucci.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}
                   style={{
                     backgroundImage: "url('/img/examples/gucci.jpg')",
-                    opacity: 1
+                    opacity: 1,
                   }}
                 />
               </CardHeader>
@@ -77,13 +78,13 @@ export default function SectionLatestOffers() {
             <Card product plain>
               <CardHeader image plain>
                 <a href="#pablo">
-                  <img src="/img/examples/dolce.jpg" alt="..." />
+                  <Image src="/img/examples/dolce.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}
                   style={{
                     backgroundImage: "url('/img/examples/dolce.jpg')",
-                    opacity: 1
+                    opacity: 1,
                   }}
                 />
               </CardHeader>
@@ -125,13 +126,13 @@ export default function SectionLatestOffers() {
             <Card product plain>
               <CardHeader image plain>
                 <a href="#pablo">
-                  <img src="/img/examples/tom-ford.jpg" alt="..." />
+                  <Image src="/img/examples/tom-ford.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}
                   style={{
                     backgroundImage: "url('/img/examples/tom-ford.jpg')",
-                    opacity: 1
+                    opacity: 1,
                   }}
                 />
               </CardHeader>

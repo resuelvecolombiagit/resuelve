@@ -9,6 +9,7 @@ import Quote from "/components/Typography/Quote.js";
 // core components
 
 import sectionTextStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostSections/sectionTextStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionTextStyle);
 
@@ -48,21 +49,21 @@ export default function SectionText() {
         <GridItem xs={12} sm={10} md={10} className={classes.section}>
           <GridContainer>
             <GridItem xs={12} sm={4} md={4}>
-              <img
+              <Image
                 src="/img/examples/blog4.jpg"
                 alt="..."
                 className={imgClasses}
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img
+              <Image
                 src="/img/examples/blog3.jpg"
                 alt="..."
                 className={imgClasses}
               />
             </GridItem>
             <GridItem xs={12} sm={4} md={4}>
-              <img
+              <Image
                 src="/img/examples/blog1.jpg"
                 alt="..."
                 className={imgClasses}

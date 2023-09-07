@@ -1,7 +1,7 @@
 import React from "react";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import FormatQuote from "@mui/icons-material/FormatQuote";
 import Star from "@mui/icons-material/Star";
@@ -16,6 +16,7 @@ import Muted from "/components/Typography/Muted.js";
 import Warning from "/components/Typography/Warning.js";
 
 import testimonialsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/testimonialsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(testimonialsStyle);
 
@@ -27,7 +28,7 @@ export default function SectionTestimonials({ ...rest }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className="cd-section" {...rest}>
@@ -71,7 +72,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h6 className={classes.cardCategory}>@ALECTHOMPSON</h6>
                   <CardAvatar testimonial testimonialFooter>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile1-square.jpg"
                         alt="..."
                       />
@@ -98,7 +99,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h6 className={classes.cardCategory}>@GINAANDREW</h6>
                   <CardAvatar testimonial testimonialFooter>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile4-square.jpg"
                         alt="..."
                       />
@@ -124,7 +125,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <h6 className={classes.cardCategory}>@GEORGEWEST</h6>
                   <CardAvatar testimonial testimonialFooter>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile2-square.jpg"
                         alt="..."
                       />
@@ -155,7 +156,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/faces/kendall.jpg" alt="..." />
+                        <Image src="/img/faces/kendall.jpg" alt="..." />
                       </a>
                     </CardAvatar>
                     <CardBody plain>
@@ -196,7 +197,7 @@ export default function SectionTestimonials({ ...rest }) {
                   <Card testimonial plain className={classes.card2}>
                     <CardAvatar testimonial plain>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/faces/christian.jpg" alt="..." />
+                        <Image src="/img/faces/christian.jpg" alt="..." />
                       </a>
                     </CardAvatar>
                     <CardBody plain>
@@ -255,7 +256,10 @@ export default function SectionTestimonials({ ...rest }) {
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile1-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile1-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody plain>
@@ -276,7 +280,10 @@ export default function SectionTestimonials({ ...rest }) {
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile4-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile4-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody plain>
@@ -298,7 +305,10 @@ export default function SectionTestimonials({ ...rest }) {
               <Card testimonial plain>
                 <CardAvatar testimonial plain>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/faces/card-profile6-square.jpg" alt="..." />
+                    <Image
+                      src="/img/faces/card-profile6-square.jpg"
+                      alt="..."
+                    />
                   </a>
                 </CardAvatar>
                 <CardBody plain>

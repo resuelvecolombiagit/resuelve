@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
@@ -12,6 +12,7 @@ import Muted from "/components/Typography/Muted.js";
 import Button from "/components/CustomButtons/Button.js";
 
 import sectionImageStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionImageStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionImageStyle);
 
@@ -30,7 +31,7 @@ export default function SectionImage() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/faces/card-profile1-square.jpg"
                         alt="..."
                       />
@@ -69,7 +70,7 @@ export default function SectionImage() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/faces/card-profile4-square.jpg"
                         alt="..."
                       />

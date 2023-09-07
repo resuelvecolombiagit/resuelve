@@ -4,9 +4,10 @@ import classNames from "classnames";
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 import officeStyle from "/styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/officeStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(officeStyle);
 
@@ -30,7 +31,7 @@ export default function SectionOffice() {
       </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4}>
-          <img
+          <Image
             className={classNames(
               classes.imgRaised,
               classes.imgFluid,
@@ -41,7 +42,7 @@ export default function SectionOffice() {
           />
         </GridItem>
         <GridItem md={4} sm={4}>
-          <img
+          <Image
             className={classNames(
               classes.imgRaised,
               classes.imgFluid,
@@ -52,7 +53,7 @@ export default function SectionOffice() {
           />
         </GridItem>
         <GridItem md={4} sm={4}>
-          <img
+          <Image
             className={classNames(
               classes.imgRaised,
               classes.imgFluid,
@@ -63,7 +64,7 @@ export default function SectionOffice() {
           />
         </GridItem>
         <GridItem md={6} sm={6}>
-          <img
+          <Image
             className={classNames(
               classes.imgRaised,
               classes.imgFluid,
@@ -74,7 +75,7 @@ export default function SectionOffice() {
           />
         </GridItem>
         <GridItem md={6} sm={6}>
-          <img
+          <Image
             className={classNames(
               classes.imgRaised,
               classes.imgFluid,

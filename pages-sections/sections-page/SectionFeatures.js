@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import Chat from "@mui/icons-material/Chat";
 import VerifiedUser from "@mui/icons-material/VerifiedUser";
@@ -22,6 +22,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import InfoArea from "/components/InfoArea/InfoArea.js";
 
 import featuresStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/featuresStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(featuresStyle);
 
@@ -165,7 +166,7 @@ export default function SectionFeatures({ ...rest }) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
               <div className={classes.phoneContainer}>
-                <img src="/img/sections/iphone.png" alt="..." />
+                <Image src="/img/sections/iphone.png" alt="..." />
               </div>
             </GridItem>
             <GridItem xs={12} sm={6} md={6}>
@@ -231,7 +232,7 @@ export default function SectionFeatures({ ...rest }) {
             </GridItem>
             <GridItem xs={12} sm={12} md={12} lg={4}>
               <div className={classes.phoneContainer}>
-                <img src="/img/sections/iphone2.png" alt="..." />
+                <Image src="/img/sections/iphone2.png" alt="..." />
               </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={12} lg={3} className={classes.mrAuto}>

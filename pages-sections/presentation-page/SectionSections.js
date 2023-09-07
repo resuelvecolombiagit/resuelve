@@ -14,6 +14,7 @@ import sectionsStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentatio
 
 // images array used in rendering a function for this section
 import imgs from "/public/img/assets-for-demo/sections/imgs.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionsStyle);
 
@@ -31,7 +32,7 @@ export default function SectionSections() {
                 key={el + "_" + index}
                 className={cssClass}
               >
-                <img
+                <Image
                   src={`/img/assets-for-demo/sections/${el}.jpg`}
                   alt={el}
                   key={el[index]}

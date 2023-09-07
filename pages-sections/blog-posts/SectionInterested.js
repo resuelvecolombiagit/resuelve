@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import TrendingUp from "@mui/icons-material/TrendingUp";
 // core components
@@ -13,6 +13,7 @@ import Success from "/components/Typography/Success.js";
 import Danger from "/components/Typography/Danger.js";
 
 import sectionInterestedStyle from "/styles/jss/nextjs-material-kit-pro/pages/blogPostsSections/sectionInterestedStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(sectionInterestedStyle);
 
@@ -29,13 +30,13 @@ export default function SectionInterested() {
           <Card plain blog>
             <CardHeader image plain>
               <a href="#pablo">
-                <img src="/img/bg5.jpg" alt="..." />
+                <Image src="/img/bg5.jpg" alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
                   backgroundImage: "url('/img/bg5.jpg')",
-                  opacity: "1"
+                  opacity: "1",
                 }}
               />
             </CardHeader>
@@ -61,13 +62,13 @@ export default function SectionInterested() {
           <Card plain blog>
             <CardHeader plain image>
               <a href="#pablo">
-                <img src="/img/examples/blog5.jpg" alt="..." />
+                <Image src="/img/examples/blog5.jpg" alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
                   backgroundImage: "url('/img/examples/blog5.jpg')",
-                  opacity: "1"
+                  opacity: "1",
                 }}
               />
             </CardHeader>
@@ -93,13 +94,13 @@ export default function SectionInterested() {
           <Card plain blog>
             <CardHeader plain image>
               <a href="#pablo">
-                <img src="/img/examples/blog6.jpg" alt="..." />
+                <Image src="/img/examples/blog6.jpg" alt="..." />
               </a>
               <div
                 className={classes.coloredShadow}
                 style={{
                   backgroundImage: "url('/img/examples/blog6.jpg')",
-                  opacity: "1"
+                  opacity: "1",
                 }}
               />
             </CardHeader>

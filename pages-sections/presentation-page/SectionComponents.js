@@ -5,6 +5,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import makeStyles from "@mui/styles/makeStyles";
 
 import componentsStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/componentsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(componentsStyle);
 
@@ -28,37 +29,37 @@ export default function SectionComponents() {
           </GridItem>
           <GridItem xs={12} sm={12} md={6} lg={6} className={classes.mlAuto}>
             <div className={classes.imageContainer}>
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/laptop-basics.png"
                 alt="macbook"
                 className={classes.componentsMacbook}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/table.jpg"
                 alt="macbook"
                 className={classes.shoppingCart}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/share-btn.png"
                 alt="macbook"
                 className={classes.shareButton}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/coloured-card-with-btn.jpg"
                 alt="macbook"
                 className={classes.cardImage}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/coloured-card.jpg"
                 alt="macbook"
                 className={classes.twitterImage}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/social-row.jpg"
                 alt="macbook"
                 className={classes.iconsImage}
               />
-              <img
+              <Image
                 src="/img/assets-for-demo/presentationViewSectionComponent/pin-btn.jpg"
                 alt="macbook"
                 className={classes.repostImage}

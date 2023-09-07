@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 // core components
 import Button from "/components/CustomButtons/Button.js";
+import Image from "next/image";
 
 export default function ImageUpload(props) {
   const [file, setFile] = React.useState(null);
@@ -43,7 +44,7 @@ export default function ImageUpload(props) {
     <div className="fileinput text-center">
       <input type="file" onChange={handleImageChange} ref={fileInput} />
       <div className={"thumbnail" + (avatar ? " img-circle" : "")}>
-        <img src={imagePreviewUrl} alt="..." />
+        <Image src={imagePreviewUrl} alt="..." />
       </div>
       <div>
         {file === null ? (
@@ -70,5 +71,5 @@ ImageUpload.propTypes = {
   avatar: PropTypes.bool,
   addButtonProps: PropTypes.object,
   changeButtonProps: PropTypes.object,
-  removeButtonProps: PropTypes.object
+  removeButtonProps: PropTypes.object,
 };

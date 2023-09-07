@@ -1,11 +1,12 @@
 import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 // core components
 
 import styles from "/styles/jss/nextjs-material-kit-pro/components/mediaStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -25,7 +26,7 @@ export default function Media(props) {
     <div {...rest} className={classes.media}>
       <a href={avatarLink} className={classes.mediaLink}>
         <div className={classes.mediaAvatar}>
-          <img src={avatar} alt={avatarAlt} />
+          <Image src={avatar} alt={avatarAlt} />
         </div>
       </a>
       <div className={classes.mediaBody}>
@@ -46,7 +47,7 @@ export default function Media(props) {
 
 Media.defaultProps = {
   avatarLink: "#pablo",
-  avatarAlt: "..."
+  avatarAlt: "...",
 };
 
 Media.propTypes = {
@@ -56,5 +57,5 @@ Media.propTypes = {
   title: PropTypes.node,
   body: PropTypes.node,
   footer: PropTypes.node,
-  innerMedias: PropTypes.arrayOf(PropTypes.object)
+  innerMedias: PropTypes.arrayOf(PropTypes.object),
 };

@@ -9,9 +9,10 @@ import CardAvatar from "/components/Card/CardAvatar.js";
 import CardBody from "/components/Card/CardBody.js";
 import CardFooter from "/components/Card/CardFooter.js";
 import Button from "/components/CustomButtons/Button.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 import teamStyle from "/styles/jss/nextjs-material-kit-pro/pages/aboutUsSections/teamStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(teamStyle);
 
@@ -41,7 +42,7 @@ export default function SectionTeam() {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
+                <Image
                   src="/img/faces/marc.jpg"
                   alt="profile-pic"
                   className={classes.img}
@@ -73,7 +74,7 @@ export default function SectionTeam() {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
+                <Image
                   src="/img/faces/kendall.jpg"
                   alt="profile-pic"
                   className={classes.img}
@@ -105,7 +106,7 @@ export default function SectionTeam() {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
+                <Image
                   src="/img/faces/christian.jpg"
                   alt="profile-pic"
                   className={classes.img}
@@ -134,7 +135,7 @@ export default function SectionTeam() {
           <Card profile plain>
             <CardAvatar profile plain>
               <a href="#pablo">
-                <img
+                <Image
                   src="/img/faces/avatar.jpg"
                   alt="profile-pic"
                   className={classes.img}

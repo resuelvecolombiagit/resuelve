@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import Icon from "@mui/material/Icon";
 // @mui/icons-material
 import Build from "@mui/icons-material/Build";
@@ -23,6 +23,7 @@ import InfoArea from "/components/InfoArea/InfoArea.js";
 import Badge from "/components/Badge/Badge.js";
 
 import projectsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/projectsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(projectsStyle);
 
@@ -53,7 +54,7 @@ export default function SectionProjects({ ...rest }) {
                   { tabButton: "Marketing", tabContent: "" },
                   { tabButton: "Development", tabContent: "" },
                   { tabButton: "Productivity", tabContent: "" },
-                  { tabButton: "Web Design", tabContent: "" }
+                  { tabButton: "Web Design", tabContent: "" },
                 ]}
               />
               <div className={classes.tabSpace} />
@@ -89,7 +90,7 @@ export default function SectionProjects({ ...rest }) {
                 raised
                 background
                 style={{
-                  backgroundImage: "url('/img/examples/card-blog3.jpg')"
+                  backgroundImage: "url('/img/examples/card-blog3.jpg')",
                 }}
               >
                 <CardBody background>
@@ -116,7 +117,7 @@ export default function SectionProjects({ ...rest }) {
                 raised
                 background
                 style={{
-                  backgroundImage: "url('/img/examples/card-project6.jpg')"
+                  backgroundImage: "url('/img/examples/card-project6.jpg')",
                 }}
               >
                 <CardBody background>
@@ -175,7 +176,7 @@ export default function SectionProjects({ ...rest }) {
                   target="_blank"
                 >
                   <CardHeader image plain>
-                    <img
+                    <Image
                       src={
                         "https://s3.amazonaws.com/creativetim_bucket/products/217/original/opt_mk_nextjs_thumbnail.jpg?1525851474"
                       }
@@ -186,7 +187,7 @@ export default function SectionProjects({ ...rest }) {
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/217/original/opt_mk_nextjs_thumbnail.jpg?1525851474')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -219,7 +220,7 @@ export default function SectionProjects({ ...rest }) {
                   target="_blank"
                 >
                   <CardHeader image plain>
-                    <img
+                    <Image
                       src="https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbp_react_thumbnail.jpg?1509466309"
                       alt="..."
                     />
@@ -228,7 +229,7 @@ export default function SectionProjects({ ...rest }) {
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/66/thumb/opt_lbp_react_thumbnail.jpg?1509466309')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -261,7 +262,7 @@ export default function SectionProjects({ ...rest }) {
                   target="_blank"
                 >
                   <CardHeader image plain>
-                    <img
+                    <Image
                       src="https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306"
                       alt="..."
                     />
@@ -270,7 +271,7 @@ export default function SectionProjects({ ...rest }) {
                       style={{
                         backgroundImage:
                           "url('https://s3.amazonaws.com/creativetim_bucket/products/73/original/opt_nudp_react_thumbnail.jpg?1518533306')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -329,7 +330,7 @@ export default function SectionProjects({ ...rest }) {
               <Card plain className={classes.card2}>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project1.jpg" alt="..." />
+                    <Image src="/img/examples/card-project1.jpg" alt="..." />
                   </CardHeader>
                 </a>
                 <CardBody>
@@ -350,7 +351,7 @@ export default function SectionProjects({ ...rest }) {
               <Card plain className={classes.card2}>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project2.jpg" alt="..." />
+                    <Image src="/img/examples/card-project2.jpg" alt="..." />
                   </CardHeader>
                 </a>
                 <CardBody>
@@ -371,7 +372,7 @@ export default function SectionProjects({ ...rest }) {
               <Card plain className={classes.card2}>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project3.jpg" alt="..." />
+                    <Image src="/img/examples/card-project3.jpg" alt="..." />
                   </CardHeader>
                 </a>
                 <CardBody>
@@ -390,7 +391,7 @@ export default function SectionProjects({ ...rest }) {
               <Card plain className={classes.card2}>
                 <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   <CardHeader plain image>
-                    <img src="/img/examples/card-project4.jpg" alt="..." />
+                    <Image src="/img/examples/card-project4.jpg" alt="..." />
                   </CardHeader>
                 </a>
                 <CardBody>
@@ -438,7 +439,7 @@ export default function SectionProjects({ ...rest }) {
                 background
                 className={classes.card4}
                 style={{
-                  backgroundImage: "url('/img/examples/card-project2.jpg')"
+                  backgroundImage: "url('/img/examples/card-project2.jpg')",
                 }}
               >
                 <CardBody background className={classes.cardBody4}>
@@ -507,7 +508,7 @@ export default function SectionProjects({ ...rest }) {
                 background
                 className={classes.card4}
                 style={{
-                  backgroundImage: "url('/img/examples/card-project5.jpg')"
+                  backgroundImage: "url('/img/examples/card-project5.jpg')",
                 }}
               >
                 <CardBody background className={classes.cardBody4}>

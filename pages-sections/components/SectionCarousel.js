@@ -1,7 +1,7 @@
 import React from "react";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import LocationOn from "@mui/icons-material/LocationOn";
 // core components
@@ -10,6 +10,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import Card from "/components/Card/Card.js";
 
 import carouselStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/carouselStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(carouselStyle);
 
@@ -21,7 +22,7 @@ export default function SectionCarousel() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true
+    autoplay: true,
   };
   return (
     <div className={classes.section} id="carousel">
@@ -31,7 +32,7 @@ export default function SectionCarousel() {
             <Card>
               <Carousel {...settings}>
                 <div>
-                  <img
+                  <Image
                     src="/img/bg.jpg"
                     alt="First slide"
                     className="slick-image"
@@ -44,7 +45,7 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img
+                  <Image
                     src="/img/bg2.jpg"
                     alt="Second slide"
                     className="slick-image"
@@ -57,7 +58,7 @@ export default function SectionCarousel() {
                   </div>
                 </div>
                 <div>
-                  <img
+                  <Image
                     src="/img/bg3.jpg"
                     alt="Third slide"
                     className="slick-image"

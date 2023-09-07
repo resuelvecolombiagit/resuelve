@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 // import  from "@mui/icons-material/";
 // core components
@@ -14,13 +14,14 @@ import Button from "/components/CustomButtons/Button.js";
 
 import teamsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/teamsStyle.js";
 import teamStyle from "/styles/jss/nextjs-material-kit-pro/pages/landingPageSections/teamStyle.js";
+import Image from "next/image";
 
 const style = {
   ...teamsStyle,
   ...teamStyle,
   justifyContentCenter: {
-    justifyContent: "center"
-  }
+    justifyContent: "center",
+  },
 };
 
 const useStyles = makeStyles(style);
@@ -38,7 +39,7 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile1-square.jpg"
                         alt="..."
                       />
@@ -48,7 +49,7 @@ export default function SectionTeam() {
                       style={{
                         backgroundImage:
                           "url('/img/faces/card-profile1-square.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -85,7 +86,7 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile6-square.jpg"
                         alt="..."
                       />
@@ -95,7 +96,7 @@ export default function SectionTeam() {
                       style={{
                         backgroundImage:
                           "url('/img/faces/card-profile6-square.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -135,7 +136,7 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile4-square.jpg"
                         alt="..."
                       />
@@ -145,7 +146,7 @@ export default function SectionTeam() {
                       style={{
                         backgroundImage:
                           "url('/img/faces/card-profile4-square.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -182,7 +183,7 @@ export default function SectionTeam() {
                 <GridItem xs={12} sm={5} md={5}>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
+                      <Image
                         src="/img/faces/card-profile2-square.jpg"
                         alt="..."
                       />
@@ -192,7 +193,7 @@ export default function SectionTeam() {
                       style={{
                         backgroundImage:
                           "url('/img/faces/card-profile2-square.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>

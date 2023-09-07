@@ -2,13 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import cx from "classnames";
 
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/components/instructionStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -17,11 +18,11 @@ export default function Instruction(props) {
   const classes = useStyles();
   const instructionClasses = cx({
     [classes.instruction]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   const pictureClasses = cx({
     [classes.picture]: true,
-    [imageClassName]: imageClassName !== undefined
+    [imageClassName]: imageClassName !== undefined,
   });
   return (
     <div className={instructionClasses}>
@@ -32,7 +33,7 @@ export default function Instruction(props) {
         </GridItem>
         <GridItem xs={12} sm={12} md={4}>
           <div className={pictureClasses}>
-            <img src={image} alt={imageAlt} className={classes.image} />
+            <Image src={image} alt={imageAlt} className={classes.image} />
           </div>
         </GridItem>
       </GridContainer>
@@ -41,7 +42,7 @@ export default function Instruction(props) {
 }
 
 Instruction.defaultProps = {
-  imageAlt: "..."
+  imageAlt: "...",
 };
 
 Instruction.propTypes = {
@@ -50,5 +51,5 @@ Instruction.propTypes = {
   image: PropTypes.string.isRequired,
   imageAlt: PropTypes.string,
   className: PropTypes.string,
-  imageClassName: PropTypes.string
+  imageClassName: PropTypes.string,
 };

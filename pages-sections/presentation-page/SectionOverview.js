@@ -16,6 +16,7 @@ import AttachMoney from "@mui/icons-material/AttachMoney";
 import makeStyles from "@mui/styles/makeStyles";
 
 import overviewStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/overviewStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(overviewStyle);
 
@@ -120,7 +121,7 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <img src="/img/assets-for-demo/test1.jpg" alt="..." />
+                        <Image src="/img/assets-for-demo/test1.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -159,7 +160,7 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <img src="/img/assets-for-demo/test2.jpg" alt="..." />
+                        <Image src="/img/assets-for-demo/test2.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -199,7 +200,7 @@ export default function SectionOverview() {
                   <GridItem md={3} sm={3}>
                     <CardHeader image plain>
                       <a href="#pablo">
-                        <img src="/img/assets-for-demo/test3.jpg" alt="..." />
+                        <Image src="/img/assets-for-demo/test3.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
@@ -235,25 +236,25 @@ export default function SectionOverview() {
           <div className={classes.ourClients}>
             <GridContainer justifyContent="center">
               <GridItem md={3} sm={3}>
-                <img
+                <Image
                   src="/img/assets-for-demo/ourClients/vodafone.jpg"
                   alt="vodafone"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
-                <img
+                <Image
                   src="/img/assets-for-demo/ourClients/microsoft.jpg"
                   alt="microsoft"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
-                <img
+                <Image
                   src="/img/assets-for-demo/ourClients/harvard.jpg"
                   alt="harvard"
                 />
               </GridItem>
               <GridItem md={3} sm={3}>
-                <img
+                <Image
                   src="/img/assets-for-demo/ourClients/stanford.jpg"
                   alt="stanford"
                 />

@@ -7,6 +7,7 @@ import GridItem from "/components/Grid/GridItem.js";
 import makeStyles from "@mui/styles/makeStyles";
 
 import cardsStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/cardsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(cardsStyle);
 
@@ -18,7 +19,7 @@ export default function SectionCards() {
         <GridContainer justifyContent="center">
           <GridItem md={7} sm={7}>
             <div className={classes.imageContainer}>
-              <img src="/img/assets-for-demo/cards-test.png" alt="views" />
+              <Image src="/img/assets-for-demo/cards-test.png" alt="views" />
             </div>
           </GridItem>
           <GridItem md={4} sm={5} className={classes.mlAuto}>

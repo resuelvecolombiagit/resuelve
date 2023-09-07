@@ -1,6 +1,6 @@
 import React from "react";
 
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 // @mui/icons-material
@@ -19,6 +19,7 @@ import CustomDropdown from "/components/CustomDropdown/CustomDropdown.js";
 import Button from "/components/CustomButtons/Button.js";
 
 import navbarsStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/navbarsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(navbarsStyle);
 
@@ -63,7 +64,7 @@ export default function SectionNavbars() {
                       dropdownHeader="Dropdown Header"
                       buttonProps={{
                         className: classes.navLink,
-                        color: "transparent"
+                        color: "transparent",
                       }}
                       dropdownList={[
                         "Action",
@@ -72,7 +73,7 @@ export default function SectionNavbars() {
                         { divider: true },
                         "Separated link",
                         { divider: true },
-                        "One more separated link"
+                        "One more separated link",
                       ]}
                     />
                   </ListItem>
@@ -106,7 +107,7 @@ export default function SectionNavbars() {
                       buttonIcon={Settings}
                       buttonProps={{
                         className: classes.navLink,
-                        color: "transparent"
+                        color: "transparent",
                       }}
                       dropdownList={[
                         "Action",
@@ -115,7 +116,7 @@ export default function SectionNavbars() {
                         { divider: true },
                         "Separated link",
                         { divider: true },
-                        "One more separated link"
+                        "One more separated link",
                       ]}
                     />
                   </ListItem>
@@ -165,14 +166,14 @@ export default function SectionNavbars() {
                     white
                     inputRootCustomClasses={classes.inputRootCustomClasses}
                     formControlProps={{
-                      className: classes.formControl
+                      className: classes.formControl,
                     }}
                     inputProps={{
                       placeholder: "Search",
                       inputProps: {
                         "aria-label": "Search",
-                        className: classes.searchInput
-                      }
+                        className: classes.searchInput,
+                      },
                     }}
                   />
                   <Button color="white" justIcon round>
@@ -302,7 +303,7 @@ export default function SectionNavbars() {
                     hoverColor="dark"
                     dropdownHeader="Dropdown Header"
                     buttonText={
-                      <img
+                      <Image
                         src="/img/faces/avatar.jpg"
                         className={classes.img}
                         alt="profile"
@@ -311,12 +312,12 @@ export default function SectionNavbars() {
                     buttonProps={{
                       className:
                         classes.navLink + " " + classes.imageDropdownButton,
-                      color: "transparent"
+                      color: "transparent",
                     }}
                     dropdownList={[
                       "Me",
                       "Settings and other stuff",
-                      "Sign out"
+                      "Sign out",
                     ]}
                   />
                 </ListItem>

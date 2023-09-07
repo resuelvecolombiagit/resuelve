@@ -7,9 +7,10 @@ import GridItem from "/components/Grid/GridItem.js";
 import Card from "/components/Card/Card.js";
 import CardHeader from "/components/Card/CardHeader.js";
 import CardBody from "/components/Card/CardBody.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/pages/ecommerceSections/blogStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -24,7 +25,7 @@ export default function SectionBlog() {
             <Card blog>
               <CardHeader image>
                 <a href="#pablo">
-                  <img src="/img/dg6.jpg" alt="..." />
+                  <Image src="/img/dg6.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}
@@ -54,13 +55,13 @@ export default function SectionBlog() {
             <Card blog>
               <CardHeader image>
                 <a href="#pablo">
-                  <img src="/img/dg10.jpg" alt="..." />
+                  <Image src="/img/dg10.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}
                   style={{
                     backgroundImage: "url('/img/dg10.jpg')",
-                    opacity: 1
+                    opacity: 1,
                   }}
                 />
               </CardHeader>
@@ -87,7 +88,7 @@ export default function SectionBlog() {
             <Card blog>
               <CardHeader image>
                 <a href="#pablo">
-                  <img src="/img/dg9.jpg" alt="..." />
+                  <Image src="/img/dg9.jpg" alt="..." />
                 </a>
                 <div
                   className={classes.coloredShadow}

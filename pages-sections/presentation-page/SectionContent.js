@@ -7,6 +7,7 @@ import makeStyles from "@mui/styles/makeStyles";
 import ScrollAnimation from "react-animate-on-scroll";
 
 import contentStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/contentStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(contentStyle);
 
@@ -36,7 +37,7 @@ export default function SectionContent() {
             <div className={classes.imageContainer}>
               <div className={classes.animeAreaImg}>
                 <ScrollAnimation animateIn="fadeInUp">
-                  <img
+                  <Image
                     src="/img/assets-for-demo/presentationViewSectionComponent/ipad-comments.jpg"
                     alt="iPad comments"
                     className={classes.areaImg}
@@ -45,14 +46,14 @@ export default function SectionContent() {
               </div>
               <div className={classes.animeInfoImg}>
                 <ScrollAnimation animateIn="fadeInUp">
-                  <img
+                  <Image
                     src="/img/assets-for-demo/presentationViewSectionComponent/ipad-table.jpg"
                     alt="iPad table"
                     className={classes.infoImg}
                   />
                 </ScrollAnimation>
               </div>
-              <img
+              <Image
                 className={classes.ipadImg}
                 src="/img/assets-for-demo/presentationViewSectionComponent/presentation-ipad.jpg"
                 alt="iPad"

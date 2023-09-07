@@ -4,7 +4,7 @@ import React from "react";
 import classNames from "classnames";
 // react component used to create nice image meadia player
 import ImageGallery from "react-image-gallery";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
@@ -32,6 +32,7 @@ import CardFooter from "/components/Card/CardFooter.js";
 import Tooltip from "@mui/material/Tooltip";
 
 import productStyle from "/styles/jss/nextjs-material-kit-pro/pages/productStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(productStyle);
 
@@ -42,20 +43,20 @@ export default function ProductPage() {
   const images = [
     {
       original: "/img/examples/product3.jpg",
-      thumbnail: "/img/examples/product3.jpg"
+      thumbnail: "/img/examples/product3.jpg",
     },
     {
       original: "/img/examples/product4.jpg",
-      thumbnail: "/img/examples/product4.jpg"
+      thumbnail: "/img/examples/product4.jpg",
     },
     {
       original: "/img/examples/product1.jpg",
-      thumbnail: "/img/examples/product1.jpg"
+      thumbnail: "/img/examples/product1.jpg",
     },
     {
       original: "/img/examples/product2.jpg",
-      thumbnail: "/img/examples/product2.jpg"
-    }
+      thumbnail: "/img/examples/product2.jpg",
+    },
   ];
   return (
     <div className={classes.productPage}>
@@ -66,7 +67,7 @@ export default function ProductPage() {
         color="transparent"
         changeColorOnScroll={{
           height: 100,
-          color: "rose"
+          color: "rose",
         }}
       />
       <Parallax
@@ -133,7 +134,7 @@ export default function ProductPage() {
                           flattering cutouts through the torso and back. Wear
                           yours with mirrored sunglasses on vacation.
                         </p>
-                      )
+                      ),
                     },
                     {
                       title: "Designer Information",
@@ -147,7 +148,7 @@ export default function ProductPage() {
                           Collection - a range of luxe city staples with a {'"'}
                           downtown romantic{'"'} theme.
                         </p>
-                      )
+                      ),
                     },
                     {
                       title: "Details and Care",
@@ -162,8 +163,8 @@ export default function ProductPage() {
                           <li>84% cotton, 14% nylon, 2% elastane</li>
                           <li>Dry clean</li>
                         </ul>
-                      )
-                    }
+                      ),
+                    },
                   ]}
                 />
                 <GridContainer className={classes.pickSize}>
@@ -175,22 +176,22 @@ export default function ProductPage() {
                     >
                       <Select
                         MenuProps={{
-                          className: classes.selectMenu
+                          className: classes.selectMenu,
                         }}
                         classes={{
-                          select: classes.select
+                          select: classes.select,
                         }}
                         value={colorSelect}
                         onChange={(event) => setColorSelect(event.target.value)}
                         inputProps={{
                           name: "colorSelect",
-                          id: "color-select"
+                          id: "color-select",
                         }}
                       >
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="0"
                         >
@@ -199,7 +200,7 @@ export default function ProductPage() {
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="1"
                         >
@@ -208,7 +209,7 @@ export default function ProductPage() {
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="2"
                         >
@@ -225,22 +226,22 @@ export default function ProductPage() {
                     >
                       <Select
                         MenuProps={{
-                          className: classes.selectMenu
+                          className: classes.selectMenu,
                         }}
                         classes={{
-                          select: classes.select
+                          select: classes.select,
                         }}
                         value={sizeSelect}
                         onChange={(event) => setSizeSelect(event.target.value)}
                         inputProps={{
                           name: "sizeSelect",
-                          id: "size-select"
+                          id: "size-select",
                         }}
                       >
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="0"
                         >
@@ -249,7 +250,7 @@ export default function ProductPage() {
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="1"
                         >
@@ -258,7 +259,7 @@ export default function ProductPage() {
                         <MenuItem
                           classes={{
                             root: classes.selectMenuItem,
-                            selected: classes.selectMenuItemSelected
+                            selected: classes.selectMenuItemSelected,
                           }}
                           value="2"
                         >
@@ -316,7 +317,7 @@ export default function ProductPage() {
                 <Card product>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/examples/card-product1.jpg"
                         alt="cardProduct"
                       />
@@ -360,7 +361,7 @@ export default function ProductPage() {
                 <Card product>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/examples/card-product3.jpg"
                         alt="cardProduct3"
                       />
@@ -398,7 +399,7 @@ export default function ProductPage() {
                 <Card product>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/examples/card-product4.jpg"
                         alt="cardProduct4"
                       />
@@ -436,7 +437,7 @@ export default function ProductPage() {
                 <Card product>
                   <CardHeader image>
                     <a href="#pablo">
-                      <img
+                      <Image
                         src="/img/examples/card-product2.jpg"
                         alt="cardProduct2"
                       />

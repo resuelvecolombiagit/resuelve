@@ -1,6 +1,6 @@
 import React from "react";
 
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import Icon from "@mui/material/Icon";
 // @mui/icons-material
 import Favorite from "@mui/icons-material/Favorite";
@@ -34,6 +34,7 @@ import Rose from "/components/Typography/Rose.js";
 import Button from "/components/CustomButtons/Button.js";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/sectionCards.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -94,7 +95,7 @@ export default function SectionCards() {
                   <Card blog>
                     <CardHeader image>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-blog1.jpg" alt="..." />
+                        <Image src="/img/examples/card-blog1.jpg" alt="..." />
                         <div className={classes.cardTitleAbsolute}>
                           This Summer Will be Awesome
                         </div>
@@ -104,7 +105,7 @@ export default function SectionCards() {
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog1.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -136,7 +137,7 @@ export default function SectionCards() {
                     <CardFooter>
                       <div className={classes.authorWhite}>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                          <img
+                          <Image
                             src="/img/faces/avatar.jpg"
                             alt="..."
                             className={classes.imgRaised + " " + classes.avatar}
@@ -172,7 +173,7 @@ export default function SectionCards() {
                     <CardFooter>
                       <div className={classes.author}>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                          <img
+                          <Image
                             src="/img/faces/christian.jpg"
                             alt="..."
                             className={classes.imgRaised + " " + classes.avatar}
@@ -191,14 +192,14 @@ export default function SectionCards() {
                   <Card blog>
                     <CardHeader image>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-blog2.jpg" alt="..." />
+                        <Image src="/img/examples/card-blog2.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog2.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -221,7 +222,7 @@ export default function SectionCards() {
                     <CardFooter>
                       <div className={classes.author}>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                          <img
+                          <Image
                             src="/img/faces/marc.jpg"
                             alt="..."
                             className={classes.imgRaised + " " + classes.avatar}
@@ -239,13 +240,13 @@ export default function SectionCards() {
                   <Card blog>
                     <CardHeader image>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/blog8.jpg" alt="..." />
+                        <Image src="/img/examples/blog8.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/examples/blog8.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -264,7 +265,7 @@ export default function SectionCards() {
                     <CardFooter>
                       <div className={classes.author}>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                          <img
+                          <Image
                             src="/img/faces/marc.jpg"
                             alt="..."
                             className={classes.imgRaised + " " + classes.avatar}
@@ -321,7 +322,10 @@ export default function SectionCards() {
                   <Card profile>
                     <CardHeader image>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-profile4.jpg" alt="..." />
+                        <Image
+                          src="/img/examples/card-profile4.jpg"
+                          alt="..."
+                        />
                         <div className={classes.cardTitleAbsolute}>
                           Tania Andrew
                         </div>
@@ -331,7 +335,7 @@ export default function SectionCards() {
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-profile4.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -366,14 +370,17 @@ export default function SectionCards() {
                   <Card profile>
                     <CardHeader image>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-profile1.jpg" alt="..." />
+                        <Image
+                          src="/img/examples/card-profile1.jpg"
+                          alt="..."
+                        />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-profile1.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -407,7 +414,7 @@ export default function SectionCards() {
                   <Card profile>
                     <CardAvatar profile>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/faces/marc.jpg" alt="..." />
+                        <Image src="/img/faces/marc.jpg" alt="..." />
                       </a>
                     </CardAvatar>
                     <CardBody>
@@ -446,7 +453,7 @@ export default function SectionCards() {
                   <Card
                     background
                     style={{
-                      backgroundImage: "url('/img/examples/office1.jpg')"
+                      backgroundImage: "url('/img/examples/office1.jpg')",
                     }}
                   >
                     <CardBody background>
@@ -477,7 +484,7 @@ export default function SectionCards() {
                   <Card
                     background
                     style={{
-                      backgroundImage: "url('/img/examples/card-blog3.jpg')"
+                      backgroundImage: "url('/img/examples/card-blog3.jpg')",
                     }}
                   >
                     <CardBody background>
@@ -576,7 +583,7 @@ export default function SectionCards() {
                     pricing
                     background
                     style={{
-                      backgroundImage: "url('/img/examples/card-blog3.jpg')"
+                      backgroundImage: "url('/img/examples/card-blog3.jpg')",
                     }}
                   >
                     <CardBody pricing background>
@@ -665,7 +672,7 @@ export default function SectionCards() {
                         classes.front + " " + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog5.jpg')"
+                        backgroundImage: "url('/img/examples/card-blog5.jpg')",
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -688,7 +695,7 @@ export default function SectionCards() {
                     <div
                       className={classes.back + " " + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog5.jpg')"
+                        backgroundImage: "url('/img/examples/card-blog5.jpg')",
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -787,7 +794,7 @@ export default function SectionCards() {
                       <CardFooter>
                         <div className={classes.authorWhite}>
                           <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                            <img
+                            <Image
                               src="/img/faces/avatar.jpg"
                               alt="..."
                               className={
@@ -926,7 +933,7 @@ export default function SectionCards() {
                         classes.front + " " + classes.wrapperBackground
                       }
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/examples/card-blog6.jpg')",
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -959,7 +966,7 @@ export default function SectionCards() {
                     <div
                       className={classes.back + " " + classes.wrapperBackground}
                       style={{
-                        backgroundImage: "url('/img/examples/card-blog6.jpg')"
+                        backgroundImage: "url('/img/examples/card-blog6.jpg')",
                       }}
                     >
                       <CardBody background className={classes.cardBodyRotate}>
@@ -1098,13 +1105,13 @@ export default function SectionCards() {
               <Card blog>
                 <CardHeader image>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/color1.jpg" alt="..." />
+                    <Image src="/img/examples/color1.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/color1.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -1124,13 +1131,13 @@ export default function SectionCards() {
               <Card blog>
                 <CardHeader image>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/color2.jpg" alt="..." />
+                    <Image src="/img/examples/color2.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/color2.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -1150,13 +1157,13 @@ export default function SectionCards() {
               <Card blog>
                 <CardHeader image>
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/color3.jpg" alt="..." />
+                    <Image src="/img/examples/color3.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/color3.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -1188,7 +1195,7 @@ export default function SectionCards() {
                 <Card blog plain>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/examples/blog5.jpg" alt="..." />
+                      <Image src="/img/examples/blog5.jpg" alt="..." />
                       <div className={classes.cardTitleAbsolute}>
                         This Summer Will be Awesome
                       </div>
@@ -1197,7 +1204,7 @@ export default function SectionCards() {
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog5.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -1229,7 +1236,7 @@ export default function SectionCards() {
                   <CardFooter>
                     <div className={classes.authorWhite}>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/avatar.jpg"
                           alt="..."
                           className={classes.imgRaised + " " + classes.avatar}
@@ -1250,13 +1257,13 @@ export default function SectionCards() {
                 <Card blog plain>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/examples/blog1.jpg" alt="..." />
+                      <Image src="/img/examples/blog1.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog1.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -1279,7 +1286,7 @@ export default function SectionCards() {
                   <CardFooter plain>
                     <div className={classes.author}>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/marc.jpg"
                           alt="..."
                           className={classes.imgRaised + " " + classes.avatar}
@@ -1297,13 +1304,13 @@ export default function SectionCards() {
                 <Card blog plain>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/examples/blog6.jpg" alt="..." />
+                      <Image src="/img/examples/blog6.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage: "url('/img/examples/blog6.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -1322,7 +1329,7 @@ export default function SectionCards() {
                   <CardFooter plain>
                     <div className={classes.author}>
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        <img
+                        <Image
                           src="/img/faces/marc.jpg"
                           alt="..."
                           className={classes.imgRaised + " " + classes.avatar}
@@ -1375,7 +1382,7 @@ export default function SectionCards() {
                 <Card profile plain>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/examples/card-profile4.jpg" alt="..." />
+                      <Image src="/img/examples/card-profile4.jpg" alt="..." />
                       <div className={classes.cardTitleAbsolute}>
                         Tania Andrew
                       </div>
@@ -1385,7 +1392,7 @@ export default function SectionCards() {
                       style={{
                         backgroundImage:
                           "url('/img/examples/card-profile4.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -1421,14 +1428,14 @@ export default function SectionCards() {
                 <Card profile plain>
                   <CardHeader image plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/examples/card-profile1.jpg" alt="..." />
+                      <Image src="/img/examples/card-profile1.jpg" alt="..." />
                     </a>
                     <div
                       className={classes.coloredShadow}
                       style={{
                         backgroundImage:
                           "url('/img/examples/card-profile1.jpg')",
-                        opacity: "1"
+                        opacity: "1",
                       }}
                     />
                   </CardHeader>
@@ -1463,7 +1470,7 @@ export default function SectionCards() {
                 <Card profile plain>
                   <CardAvatar profile plain>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img src="/img/faces/marc.jpg" alt="..." />
+                      <Image src="/img/faces/marc.jpg" alt="..." />
                     </a>
                   </CardAvatar>
                   <CardBody plain>

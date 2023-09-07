@@ -2,7 +2,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import Tooltip from "@mui/material/Tooltip";
@@ -25,6 +25,7 @@ import Card from "/components/Card/Card.js";
 import CardBody from "/components/Card/CardBody.js";
 
 import shoppingCartStyle from "/styles/jss/nextjs-material-kit-pro/pages/shoppingCartStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(shoppingCartStyle);
 
@@ -43,7 +44,7 @@ export default function ShoppingCartPage() {
         color="transparent"
         changeColorOnScroll={{
           height: 300,
-          color: "info"
+          color: "info",
         }}
       />
 
@@ -78,12 +79,12 @@ export default function ShoppingCartPage() {
                   "PRICE",
                   "QTY",
                   "AMOUNT",
-                  ""
+                  "",
                 ]}
                 tableData={[
                   [
                     <div className={classes.imgContainer} key={1}>
-                      <img
+                      <Image
                         src="/img/product1.jpg"
                         alt="..."
                         className={classes.img}
@@ -137,11 +138,11 @@ export default function ShoppingCartPage() {
                       <Button link className={classes.actionButton}>
                         <Close />
                       </Button>
-                    </Tooltip>
+                    </Tooltip>,
                   ],
                   [
                     <div className={classes.imgContainer} key={1}>
-                      <img
+                      <Image
                         src="/img/product2.jpg"
                         alt="..."
                         className={classes.img}
@@ -193,11 +194,11 @@ export default function ShoppingCartPage() {
                       <Button link className={classes.actionButton}>
                         <Close />
                       </Button>
-                    </Tooltip>
+                    </Tooltip>,
                   ],
                   [
                     <div className={classes.imgContainer} key={1}>
-                      <img
+                      <Image
                         src="/img/product3.jpg"
                         alt="..."
                         className={classes.img}
@@ -251,7 +252,7 @@ export default function ShoppingCartPage() {
                       <Button link className={classes.actionButton}>
                         <Close />
                       </Button>
-                    </Tooltip>
+                    </Tooltip>,
                   ],
                   {
                     purchase: true,
@@ -267,9 +268,9 @@ export default function ShoppingCartPage() {
                         <Button color="info" round>
                           Complete Purchase <KeyboardArrowRight />
                         </Button>
-                      )
-                    }
-                  }
+                      ),
+                    },
+                  },
                 ]}
                 tableShopping
                 customHeadCellClasses={[
@@ -278,7 +279,7 @@ export default function ShoppingCartPage() {
                   classes.description,
                   classes.textRight,
                   classes.textRight,
-                  classes.textRight
+                  classes.textRight,
                 ]}
                 customHeadClassesForCells={[0, 2, 3, 4, 5, 6]}
                 customCellClasses={[
@@ -287,7 +288,7 @@ export default function ShoppingCartPage() {
                   classes.customFont,
                   classes.tdNumber,
                   classes.tdNumber + " " + classes.tdNumberAndButtonGroup,
-                  classes.tdNumber + " " + classes.textCenter
+                  classes.tdNumber + " " + classes.textCenter,
                 ]}
                 customClassesForCells={[1, 2, 3, 4, 5, 6]}
               />

@@ -1,5 +1,5 @@
 import React from "react";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @mui/icons-material
 import TrendingUp from "@mui/icons-material/TrendingUp";
 // core components
@@ -14,6 +14,7 @@ import Success from "/components/Typography/Success.js";
 import Button from "/components/CustomButtons/Button.js";
 
 import blogsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSections/blogsStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(blogsStyle);
 
@@ -38,14 +39,14 @@ export default function SectionBlogs({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-blog4.jpg" alt="..." />
+                        <Image src="/img/examples/card-blog4.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog4.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -117,13 +118,13 @@ export default function SectionBlogs({ ...rest }) {
                   <GridItem xs={12} sm={5} md={5}>
                     <CardHeader image plain>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/office2.jpg" alt="..." />
+                        <Image src="/img/office2.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/office2.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -152,14 +153,14 @@ export default function SectionBlogs({ ...rest }) {
                   <Card plain blog>
                     <CardHeader plain image>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-blog4.jpg" alt="..." />
+                        <Image src="/img/examples/card-blog4.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog4.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -189,13 +190,13 @@ export default function SectionBlogs({ ...rest }) {
                   <Card plain blog>
                     <CardHeader plain image>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/blog5.jpg" alt="..." />
+                        <Image src="/img/examples/blog5.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/examples/blog5.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -224,13 +225,13 @@ export default function SectionBlogs({ ...rest }) {
                   <Card plain blog>
                     <CardHeader plain image>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/blog7.jpg" alt="..." />
+                        <Image src="/img/examples/blog7.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/examples/blog7.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -281,14 +282,14 @@ export default function SectionBlogs({ ...rest }) {
                   <GridItem xs={12} sm={4} md={4}>
                     <CardHeader image plain>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/card-blog4.jpg" alt="..." />
+                        <Image src="/img/examples/card-blog4.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog4.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                       <div
@@ -296,7 +297,7 @@ export default function SectionBlogs({ ...rest }) {
                         style={{
                           backgroundImage:
                             "url('/img/examples/card-blog4.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -337,20 +338,20 @@ export default function SectionBlogs({ ...rest }) {
                   <GridItem xs={12} sm={4} md={4}>
                     <CardHeader image plain>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/office2.jpg" alt="..." />
+                        <Image src="/img/office2.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/office2.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/office2.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -393,20 +394,20 @@ export default function SectionBlogs({ ...rest }) {
                   <GridItem xs={12} sm={4} md={4}>
                     <CardHeader image plain>
                       <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                        <img src="/img/examples/blog8.jpg" alt="..." />
+                        <Image src="/img/examples/blog8.jpg" alt="..." />
                       </a>
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/examples/blog8.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                       <div
                         className={classes.coloredShadow}
                         style={{
                           backgroundImage: "url('/img/examples/blog8.jpg')",
-                          opacity: "1"
+                          opacity: "1",
                         }}
                       />
                     </CardHeader>
@@ -461,13 +462,13 @@ export default function SectionBlogs({ ...rest }) {
               <Card plain blog className={classes.card4}>
                 <CardHeader image plain>
                   <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/bg5.jpg" alt="..." />
+                    <Image src="/img/bg5.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/bg5.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>
@@ -496,13 +497,13 @@ export default function SectionBlogs({ ...rest }) {
               <Card plain blog className={classes.card4}>
                 <CardHeader image plain>
                   <a href="#pablito" onClick={(e) => e.preventDefault()}>
-                    <img src="/img/examples/blog6.jpg" alt="..." />
+                    <Image src="/img/examples/blog6.jpg" alt="..." />
                   </a>
                   <div
                     className={classes.coloredShadow}
                     style={{
                       backgroundImage: "url('/img/examples/blog6.jpg')",
-                      opacity: "1"
+                      opacity: "1",
                     }}
                   />
                 </CardHeader>

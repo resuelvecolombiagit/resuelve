@@ -2,7 +2,7 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 // @mui/icons-material
@@ -16,6 +16,7 @@ import CustomInput from "/components/CustomInput/CustomInput.js";
 import Footer from "/components/Footer/Footer.js";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/footerStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(styles);
 
@@ -389,7 +390,7 @@ export default function SectionFooter() {
             <GridItem xs={12} sm={4} md={4}>
               <h5>Instagram Feed</h5>
               <div className={classes.galleryFeed}>
-                <img
+                <Image
                   src="/img/faces/card-profile6-square.jpg"
                   className={classNames(
                     classes.img,
@@ -398,7 +399,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/christian.jpg"
                   className={classNames(
                     classes.img,
@@ -407,7 +408,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/card-profile4-square.jpg"
                   className={classNames(
                     classes.img,
@@ -416,7 +417,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/card-profile1-square.jpg"
                   className={classNames(
                     classes.img,
@@ -425,7 +426,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/marc.jpg"
                   className={classNames(
                     classes.img,
@@ -434,7 +435,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/kendall.jpg"
                   className={classNames(
                     classes.img,
@@ -443,7 +444,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/card-profile5-square.jpg"
                   className={classNames(
                     classes.img,
@@ -452,7 +453,7 @@ export default function SectionFooter() {
                   )}
                   alt="..."
                 />
-                <img
+                <Image
                   src="/img/faces/card-profile1-square.jpg"
                   className={classNames(
                     classes.img,
@@ -709,10 +710,10 @@ export default function SectionFooter() {
                     id="footeremail"
                     formControlProps={{
                       fullWidth: false,
-                      className: classes.customFormControl
+                      className: classes.customFormControl,
                     }}
                     inputProps={{
-                      placeholder: "Your Email..."
+                      placeholder: "Your Email...",
                     }}
                   />
                   <Button color="primary" justIcon>

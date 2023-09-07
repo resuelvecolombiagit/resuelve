@@ -1,6 +1,6 @@
 import React from "react";
 
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 // @mui/icons-material
 
@@ -18,6 +18,7 @@ import Quote from "/components/Typography/Quote.js";
 import SectionContentAreas from "./SectionContentAreas.js";
 
 import typographyStyle from "/styles/jss/nextjs-material-kit-pro/pages/componentsSections/typographyStyle.js";
+import Image from "next/image.js";
 
 const useStyles = makeStyles(typographyStyle);
 
@@ -151,7 +152,7 @@ export default function SectionTypography() {
           <GridContainer>
             <GridItem xs={12} sm={2}>
               <h4>Rounded Image</h4>
-              <img
+              <Image
                 src="/img/faces/avatar.jpg"
                 alt="..."
                 className={classes.imgRounded + " " + classes.imgFluid}
@@ -159,7 +160,7 @@ export default function SectionTypography() {
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Image</h4>
-              <img
+              <Image
                 src="/img/faces/avatar.jpg"
                 alt="..."
                 className={classes.imgRoundedCircle + " " + classes.imgFluid}
@@ -167,7 +168,7 @@ export default function SectionTypography() {
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Rounded Raised</h4>
-              <img
+              <Image
                 src="/img/faces/avatar.jpg"
                 alt="..."
                 className={
@@ -181,7 +182,7 @@ export default function SectionTypography() {
             </GridItem>
             <GridItem xs={12} sm={2} className={classes.marginLeft}>
               <h4>Circle Raised</h4>
-              <img
+              <Image
                 src="/img/faces/avatar.jpg"
                 alt="..."
                 className={
