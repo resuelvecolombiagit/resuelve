@@ -59,8 +59,10 @@ export default function PresentationPage() {
         content={
           <div>
             <div className={classes.left}>
-              <div className={classes.footerBrand}>
-                Derechos reservados a: Resuelve.sas
+              <div>
+                <div className={classes.right}>
+                  &copy; {1900 + new Date().getYear()} , Creado por Resuelve
+                </div>
               </div>
             </div>
             <div className={classes.rightLinks}>

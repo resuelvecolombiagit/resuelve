@@ -102,70 +102,10 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={ViewCarousel}
           dropdownList={[
-            <Link href="/about-us">
-              <a className={classes.dropdownLink}>
-                <AccountBalance className={classes.dropdownIcons} /> About Us
-              </a>
-            </Link>,
-            <Link href="/blog-post">
-              <a className={classes.dropdownLink}>
-                <ArtTrack className={classes.dropdownIcons} /> Blog Post
-              </a>
-            </Link>,
-            <Link href="/blog-posts">
-              <a className={classes.dropdownLink}>
-                <ViewQuilt className={classes.dropdownIcons} /> Blog Posts
-              </a>
-            </Link>,
-            <Link href="/contact-us">
-              <a className={classes.dropdownLink}>
-                <LocationOn className={classes.dropdownIcons} /> Contact Us
-              </a>
-            </Link>,
-            <Link href="/landing-page">
-              <a className={classes.dropdownLink}>
-                <ViewDay className={classes.dropdownIcons} /> Landing Page
-              </a>
-            </Link>,
-            <Link href="/login">
-              <a className={classes.dropdownLink}>
-                <Fingerprint className={classes.dropdownIcons} /> Login Page
-              </a>
-            </Link>,
             <Link href="/pricing">
               <a className={classes.dropdownLink}>
-                <AttachMoney className={classes.dropdownIcons} /> Pricing Page
-              </a>
-            </Link>,
-            <Link href="/shopping-cart">
-              <a className={classes.dropdownLink}>
-                <ShoppingBasket className={classes.dropdownIcons} /> Shopping
-                Cart
-              </a>
-            </Link>,
-            <Link href="/ecommerce">
-              <a className={classes.dropdownLink}>
-                <Store className={classes.dropdownIcons} /> Ecommerce Page
-              </a>
-            </Link>,
-            <Link href="/product">
-              <a className={classes.dropdownLink}>
-                <ShoppingCart className={classes.dropdownIcons} /> Product Page
-              </a>
-            </Link>,
-            <Link href="/profile">
-              <a className={classes.dropdownLink}>
-                <AccountCircle className={classes.dropdownIcons} /> Profile Page
-              </a>
-            </Link>,
-            <Link href="/signup">
-              <a className={classes.dropdownLink}>
-                <PersonAdd className={classes.dropdownIcons} /> Signup Page
-              </a>
-            </Link>,
-            <Link href="/error-page">
-              <a className={classes.dropdownLink}>
-                <Error className={classes.dropdownIcons} /> Error Page
+                <AttachMoney className={classes.dropdownIcons} /> Conoce
+                nuestros precios
               </a>
             </Link>,
           ]}
@@ -180,7 +120,8 @@ export default function HeaderLinks(props) {
             className={classes.navButton}
             round
           >
-            <ShoppingCart className={classes.icons} /> Adquiere nuestros
+            <ShoppingCart className={classes.icons} />
+            servicios
           </Button>
         </Hidden>
         <Hidden mdUp>
@@ -191,7 +132,7 @@ export default function HeaderLinks(props) {
             className={classes.navButton}
             round
           >
-            <ShoppingCart className={classes.icons} /> Adquiere nuestros
+            <ShoppingCart className={classes.icons} />
             servicios
           </Button>
         </Hidden>

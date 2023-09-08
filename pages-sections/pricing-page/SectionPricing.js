@@ -8,7 +8,7 @@ import NavPills from "/components/NavPills/NavPills.js";
 import Card from "/components/Card/Card.js";
 import CardBody from "/components/Card/CardBody.js";
 import Button from "/components/CustomButtons/Button.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 
 import pricingStyle from "/styles/jss/nextjs-material-kit-pro/pages/pricingSections/pricingStyle.js";
 
@@ -19,57 +19,24 @@ export default function SectionPricing() {
   return (
     <div className={classes.pricingSection}>
       <GridContainer>
-        <GridItem
-          md={6}
-          sm={6}
-          className={classNames(
-            classes.mrAuto,
-            classes.mlAuto,
-            classes.textCenter
-          )}
-        >
-          <NavPills
-            alignCenter
-            color="primary"
-            tabs={[
-              {
-                tabButton: "monthly"
-              },
-              {
-                tabButton: "yearly"
-              }
-            ]}
-          />
-        </GridItem>
-      </GridContainer>
-      <GridContainer>
         <GridItem md={4} sm={4}>
           <Card plain pricing>
             <CardBody pricing>
-              <h6
-                className={classNames(classes.cardCategory, classes.textInfo)}
-              >
-                Free
-              </h6>
               <h1 className={classes.cardTitle}>
-                <small>$</small>0 <small>/mo</small>
+                50
+                <br />
+                <small>Envios mensuales</small>
               </h1>
               <ul>
                 <li>
-                  <b>1</b> Project
+                  <b>Asesoría y atención 24 horas</b>
                 </li>
                 <li>
-                  <b>5</b> Team Members
-                </li>
-                <li>
-                  <b>55</b> Personal Contacts
-                </li>
-                <li>
-                  <b>5.000</b> Messages
+                  <b>20 domiciliarios a tu disposición</b>
                 </li>
               </ul>
               <Button href="#pablo" color="primary" round>
-                Get started
+                ¡Lo quiero!
               </Button>
             </CardBody>
           </Card>
@@ -77,26 +44,24 @@ export default function SectionPricing() {
         <GridItem md={4} sm={4}>
           <Card raised pricing color="primary">
             <CardBody pricing>
-              <h6 className={classes.cardCategory}>Premium</h6>
               <h1 className={classes.cardTitleWhite}>
-                <small>$</small>89 <small>/mo</small>
+                150
+                <br />
+                <small>Envios mensuales</small>
               </h1>
               <ul>
                 <li>
-                  <b>500</b> Project
+                  <b>Asesoría y atención 24 horas</b>
                 </li>
                 <li>
-                  <b>50</b> Team Members
+                  <b>20 domiciliarios a tu disposición</b>
                 </li>
                 <li>
-                  <b>125</b> Personal Contacts
-                </li>
-                <li>
-                  <b>15.000</b> Messages
+                  <b>Recaudo de pedidos</b>
                 </li>
               </ul>
               <Button href="#pablo" color="white" round>
-                Get started
+                ¡Lo quiero!
               </Button>
             </CardBody>
           </Card>
@@ -104,30 +69,27 @@ export default function SectionPricing() {
         <GridItem md={4} sm={4}>
           <Card plain pricing>
             <CardBody pricing>
-              <h6
-                className={classNames(classes.cardCategory, classes.textInfo)}
-              >
-                Platinum
-              </h6>
               <h1 className={classes.cardTitle}>
-                <small>$</small>199 <small>/mo</small>
+                300
+                <br />
+                <small>Envíos mensuales</small>
               </h1>
               <ul>
                 <li>
-                  <b>1000</b> Project
+                  <b>Asesoría y atención 24 horas</b>
                 </li>
                 <li>
-                  <b>100</b> Team Members
+                  <b>20 domiciliarios a tu disposición</b>
                 </li>
                 <li>
-                  <b>550</b> Personal Contacts
+                  <b>Recaudo de pedidos</b>
                 </li>
                 <li>
-                  <b>50.000</b> Messages
+                  <b>Garantía estado de paquete</b>
                 </li>
               </ul>
               <Button href="#pablo" color="primary" round>
-                Get started
+                ¡Lo quiero!
               </Button>
             </CardBody>
           </Card>
