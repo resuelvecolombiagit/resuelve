@@ -108,6 +108,12 @@ export default function HeaderLinks(props) {
                 nuestros precios
               </a>
             </Link>,
+            <Link href="/signup">
+              <a className={classes.dropdownLink}>
+                <PersonAdd className={classes.dropdownIcons} />
+                Registrate
+              </a>
+            </Link>,
           ]}
         />
       </ListItem>

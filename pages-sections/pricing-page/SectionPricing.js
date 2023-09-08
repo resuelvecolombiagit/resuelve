@@ -11,6 +11,7 @@ import Button from "/components/CustomButtons/Button.js";
 import makeStyles from "@mui/styles/makeStyles";
 
 import pricingStyle from "/styles/jss/nextjs-material-kit-pro/pages/pricingSections/pricingStyle.js";
+import Link from "next/link";
 
 const useStyles = makeStyles(pricingStyle);
 
@@ -35,9 +36,11 @@ export default function SectionPricing() {
                   <b>20 domiciliarios a tu disposición</b>
                 </li>
               </ul>
-              <Button href="#pablo" color="primary" round>
-                ¡Lo quiero!
-              </Button>
+              <Link href={"/signup"}>
+                <Button color="primary" round>
+                  ¡Lo quiero!
+                </Button>
+              </Link>
             </CardBody>
           </Card>
         </GridItem>
@@ -60,9 +63,11 @@ export default function SectionPricing() {
                   <b>Recaudo de pedidos</b>
                 </li>
               </ul>
-              <Button href="#pablo" color="white" round>
-                ¡Lo quiero!
-              </Button>
+              <Link href={"/signup"}>
+                <Button color="white" round>
+                  ¡Lo quiero!
+                </Button>
+              </Link>
             </CardBody>
           </Card>
         </GridItem>
@@ -88,9 +93,11 @@ export default function SectionPricing() {
                   <b>Garantía estado de paquete</b>
                 </li>
               </ul>
-              <Button href="#pablo" color="primary" round>
-                ¡Lo quiero!
-              </Button>
+              <Link href={"/signup"}>
+                <Button color="primary" round>
+                  ¡Lo quiero!
+                </Button>
+              </Link>
             </CardBody>
           </Card>
         </GridItem>

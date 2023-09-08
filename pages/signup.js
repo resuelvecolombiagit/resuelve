@@ -6,13 +6,7 @@ import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import Icon from "@mui/material/Icon";
 // @mui/icons-material
-import Timeline from "@mui/icons-material/Timeline";
-import Code from "@mui/icons-material/Code";
-import Group from "@mui/icons-material/Group";
-import Face from "@mui/icons-material/Face";
-import Email from "@mui/icons-material/Email";
 import Check from "@mui/icons-material/Check";
 import Favorite from "@mui/icons-material/Favorite";
 // core components
@@ -23,11 +17,12 @@ import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
 import Card from "/components/Card/Card.js";
+import CardHeader from "/components/Card/CardHeader.js";
 import CardBody from "/components/Card/CardBody.js";
-import InfoArea from "/components/InfoArea/InfoArea.js";
+import CardFooter from "/components/Card/CardFooter.js";
 import CustomInput from "/components/CustomInput/CustomInput.js";
-
 import signupPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/signupPageStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(signupPageStyle);
 
@@ -53,155 +48,146 @@ export default function SignUpPage({ ...rest }) {
       <Header
         absolute
         color="transparent"
-        brand="NextJS Material Kit PRO"
+        brand="Resuelve"
         links={<HeaderLinks dropdownHoverColor="rose" />}
         {...rest}
       />
-      <div
-        className={classes.pageHeader}
-        style={{
-          backgroundImage: "url('/img/bg7.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      >
+      <div className={classes.pageHeader}>
+        <Image
+          src={require("../public/img/Portada3.jpg")}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top center"
+        />
         <div className={classes.container}>
-          <GridContainer justifyContent="center">
-            <GridItem xs={12} sm={10} md={10}>
-              <Card className={classes.cardSignup}>
-                <h2 className={classes.cardTitle}>Register</h2>
-                <CardBody>
-                  <GridContainer justifyContent="center">
-                    <GridItem xs={12} sm={5} md={5}>
-                      <InfoArea
-                        className={classes.infoArea}
-                        title="Marketing"
-                        description="We've created the marketing campaign of the website. It was a very interesting collaboration."
-                        icon={Timeline}
-                        iconColor="rose"
-                      />
-                      <InfoArea
-                        className={classes.infoArea}
-                        title="Fully Coded in HTML5"
-                        description="We've developed the website with HTML5 and CSS3. The client has access to the code using GitHub."
-                        icon={Code}
-                        iconColor="primary"
-                      />
-                      <InfoArea
-                        className={classes.infoArea}
-                        title="Built Audience"
-                        description="There is also a Fully Customizable CMS Admin Dashboard for this product."
-                        icon={Group}
-                        iconColor="info"
-                      />
-                    </GridItem>
-                    <GridItem xs={12} sm={5} md={5}>
-                      <div className={classes.textCenter}>
-                        <Button justIcon round color="twitter">
-                          <i className={classes.socials + " fab fa-twitter"} />
-                        </Button>
-                        {` `}
-                        <Button justIcon round color="dribbble">
-                          <i className={classes.socials + " fab fa-dribbble"} />
-                        </Button>
-                        {` `}
-                        <Button justIcon round color="facebook">
-                          <i
-                            className={classes.socials + " fab fa-facebook-f"}
+          <GridContainer>
+            <GridItem xs={12} sm={6} md={6}></GridItem>
+            <GridItem xs={12} sm={6} md={6} className={classes.mlAuto}>
+              <Card className={classes.card1}>
+                <form>
+                  <CardHeader
+                    contact
+                    color="primary"
+                    className={classes.textCenter}
+                  >
+                    <h2
+                      className={classes.cardTitle}
+                      style={{ color: "white" }}
+                    >
+                      Regístrate
+                    </h2>
+                  </CardHeader>
+                  <CardBody>
+                    <GridContainer>
+                      <GridItem xs={12} sm={6} md={6}>
+                        <CustomInput
+                          labelText="Nombres"
+                          id="first"
+                          formControlProps={{
+                            fullWidth: true,
+                          }}
+                        />
+                      </GridItem>
+                      <GridItem xs={12} sm={6} md={6}>
+                        <CustomInput
+                          labelText="apellidos"
+                          id="last"
+                          formControlProps={{
+                            fullWidth: true,
+                          }}
+                        />
+                      </GridItem>
+                    </GridContainer>
+                    <CustomInput
+                      labelText="Correo electrónico"
+                      id="email-address"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                    />
+                  </CardBody>
+                  <div className="" style={{ marginLeft: 20, marginRight: 20 }}>
+                    <b>Estilo preferido de paquetes</b>
+                    <br />
+                    <div style={{ display: "flex", justifyContent: "center" }}>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            tabIndex={-1}
+                            onClick={() => handleToggle(1)}
+                            checkedIcon={
+                              <Check className={classes.checkedIcon} />
+                            }
+                            icon={<Check className={classes.uncheckedIcon} />}
+                            classes={{
+                              checked: classes.checked,
+                              root: classes.checkRoot,
+                            }}
                           />
-                        </Button>
-                        {` `}
-                        <h4 className={classes.socialTitle}>or be classical</h4>
-                      </div>
-                      <form className={classes.form}>
-                        <CustomInput
-                          formControlProps={{
-                            fullWidth: true,
-                            className: classes.customFormControlClasses,
-                          }}
-                          inputProps={{
-                            startAdornment: (
-                              <InputAdornment
-                                position="start"
-                                className={classes.inputAdornment}
-                              >
-                                <Face className={classes.inputAdornmentIcon} />
-                              </InputAdornment>
-                            ),
-                            placeholder: "First Name...",
-                          }}
-                        />
-                        <CustomInput
-                          formControlProps={{
-                            fullWidth: true,
-                            className: classes.customFormControlClasses,
-                          }}
-                          inputProps={{
-                            startAdornment: (
-                              <InputAdornment
-                                position="start"
-                                className={classes.inputAdornment}
-                              >
-                                <Email className={classes.inputAdornmentIcon} />
-                              </InputAdornment>
-                            ),
-                            placeholder: "Email...",
-                          }}
-                        />
-                        <CustomInput
-                          formControlProps={{
-                            fullWidth: true,
-                            className: classes.customFormControlClasses,
-                          }}
-                          inputProps={{
-                            startAdornment: (
-                              <InputAdornment
-                                position="start"
-                                className={classes.inputAdornment}
-                              >
-                                <Icon className={classes.inputAdornmentIcon}>
-                                  lock_outline
-                                </Icon>
-                              </InputAdornment>
-                            ),
-                            placeholder: "Password...",
-                          }}
-                        />
-                        <FormControlLabel
-                          classes={{
-                            label: classes.label,
-                          }}
-                          control={
-                            <Checkbox
-                              tabIndex={-1}
-                              onClick={() => handleToggle(1)}
-                              checkedIcon={
-                                <Check className={classes.checkedIcon} />
-                              }
-                              icon={<Check className={classes.uncheckedIcon} />}
-                              classes={{
-                                checked: classes.checked,
-                                root: classes.checkRoot,
-                              }}
-                              checked={checked.indexOf(1) !== -1 ? true : false}
-                            />
-                          }
-                          label={
-                            <span>
-                              I agree to the{" "}
-                              <a href="#pablo">terms and conditions</a>.
-                            </span>
-                          }
-                        />
-                        <div className={classes.textCenter}>
-                          <Button round color="primary">
-                            Get started
-                          </Button>
-                        </div>
-                      </form>
-                    </GridItem>
-                  </GridContainer>
-                </CardBody>
+                        }
+                        classes={{ label: classes.label }}
+                        label="Sencillo"
+                      />
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            tabIndex={-1}
+                            onClick={() => handleToggle(1)}
+                            checkedIcon={
+                              <Check className={classes.checkedIcon} />
+                            }
+                            icon={<Check className={classes.uncheckedIcon} />}
+                            classes={{
+                              checked: classes.checked,
+                              root: classes.checkRoot,
+                            }}
+                          />
+                        }
+                        classes={{ label: classes.label }}
+                        label="Mediano"
+                      />
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            tabIndex={-1}
+                            onClick={() => handleToggle(1)}
+                            checkedIcon={
+                              <Check className={classes.checkedIcon} />
+                            }
+                            icon={<Check className={classes.uncheckedIcon} />}
+                            classes={{
+                              checked: classes.checked,
+                              root: classes.checkRoot,
+                            }}
+                          />
+                        }
+                        classes={{ label: classes.label }}
+                        label="Grande"
+                      />
+                    </div>
+                  </div>
+                  <div className="" style={{ marginLeft: 20, marginRight: 20 }}>
+                    <b>Cuentanos sobre tu empresa o que servicio deseas</b>
+                    <br />
+                    <CustomInput
+                      labelText="Escribe aquí"
+                      id="message2"
+                      formControlProps={{
+                        fullWidth: true,
+                      }}
+                      inputProps={{
+                        multiline: true,
+                        rows: 5,
+                      }}
+                    />
+                  </div>
+                  <CardFooter className={classes.justifyContentBetween}>
+                    <Button color="primary" className={classes.pullRight}>
+                      Enviar
+                    </Button>
+                  </CardFooter>
+                </form>
               </Card>
             </GridItem>
           </GridContainer>
