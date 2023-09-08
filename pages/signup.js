@@ -1,14 +1,10 @@
 /*eslint-disable*/
 import React from "react";
 import makeStyles from "@mui/styles/makeStyles";
-import InputAdornment from "@mui/material/InputAdornment";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 // @mui/icons-material
 import Check from "@mui/icons-material/Check";
-import Favorite from "@mui/icons-material/Favorite";
 // core components
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
@@ -23,26 +19,53 @@ import CardFooter from "/components/Card/CardFooter.js";
 import CustomInput from "/components/CustomInput/CustomInput.js";
 import signupPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/signupPageStyle.js";
 import Image from "next/image";
+import Swal from "sweetalert2";
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles(signupPageStyle);
 
 export default function SignUpPage({ ...rest }) {
+  const router = useRouter();
+
   const [checked, setChecked] = React.useState([1]);
+  const [loading, setLoading] = React.useState(false);
+
   const handleToggle = (value) => {
     const currentIndex = checked.indexOf(value);
     const newChecked = [...checked];
+
     if (currentIndex === -1) {
       newChecked.push(value);
     } else {
       newChecked.splice(currentIndex, 1);
     }
+
     setChecked(newChecked);
   };
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
   const classes = useStyles();
+
+  const handleSend = async () => {
+    setLoading(true);
+
+    setTimeout(async () => {
+      await Swal.fire(
+        "¡Haz enviado tu información!",
+        "Se analizará tu solicitud y posteriormente se te hara envío de las credencailes a tu correo, ¡Ten paciencia!",
+        "success"
+      );
+
+      router.push("/");
+
+      setLoading(false);
+    }, 3000);
+  };
+
   return (
     <div>
       <Header
@@ -183,9 +206,19 @@ export default function SignUpPage({ ...rest }) {
                     />
                   </div>
                   <CardFooter className={classes.justifyContentBetween}>
-                    <Button color="primary" className={classes.pullRight}>
-                      Enviar
-                    </Button>
+                    {!loading ? (
+                      <Button
+                        color="primary"
+                        className={classes.pullRight}
+                        onClick={handleSend}
+                      >
+                        Enviar
+                      </Button>
+                    ) : (
+                      <Button color="primary" className={classes.pullRight}>
+                        Cargando...
+                      </Button>
+                    )}
                   </CardFooter>
                 </form>
               </Card>
@@ -194,57 +227,8 @@ export default function SignUpPage({ ...rest }) {
         </div>
         <Footer
           content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/?ref=njsmkp-signup"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-signup"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      About us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-signup"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license?ref=njsmkp-signup"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      Licenses
-                    </a>
-                  </ListItem>
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=njsmkp-signup"
-                  target="_blank"
-                >
-                  Creative Tim
-                </a>{" "}
-                for a better web.
-              </div>
+            <div className={classes.right}>
+              &copy; {1900 + new Date().getYear()} , Creado por Resuelve
             </div>
           }
         />
