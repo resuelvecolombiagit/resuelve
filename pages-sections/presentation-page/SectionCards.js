@@ -14,33 +14,42 @@ const useStyles = makeStyles(cardsStyle);
 export default function SectionCards() {
   const classes = useStyles();
   return (
-    <div className={classNames(classes.section, classes.sectionDark)}>
+    <div className={classNames(classes.section)}>
       <div className={classes.container}>
         <GridContainer justifyContent="center">
-          <GridItem md={7} sm={7}>
+          <GridItem md={4} sm={4}>
             <div className={classes.imageContainer}>
               <Image
-                src="/img/assets-for-demo/cards-test.png"
+                src={require("../../public/img/Celular.png")}
                 alt="views"
                 layout="fill"
               />
             </div>
           </GridItem>
-          <GridItem md={4} sm={5} className={classes.mlAuto}>
-            <div className={classes.sectionDescription}>
-              <h3 className={classes.title}>Unconventional Cards</h3>
-              <h6 className={classes.description}>
-                One Card for Every Problem
-              </h6>
-              <h5 className={classes.description}>
-                We love cards and everybody on the web seems to. We have gone
-                above and beyond with options for you to organise your
-                information. From cards designed for blog posts, to product
-                cards or user profiles, you will have many options to choose
-                from. All the cards follow the material principles and have a
-                design that stands out.
-              </h5>
-            </div>
+          <GridItem md={8} sm={8} className={classes.mlAuto}>
+            <GridContainer justifyContent="center">
+              <div className={classes.sectionDescription}>
+                <h3 className={classes.title}>Todo al alcance de tu App</h3>
+                <h6 className={classes.description}>
+                  Registrate con nosotros y controla todo tu proceso desde el
+                  celular
+                </h6>
+                <h4 className={classes.description}>
+                  <ul>
+                    <li>
+                      Control de tus pedidos a <b>tiempo real</b>
+                    </li>
+                    <li>
+                      Control de <b>recaudos</b> y entregas de pedidos
+                    </li>
+                    <li>Estadísticas de envíos</li>
+                    <li>
+                      Bases de datos de clientes e historiales de procesos
+                    </li>
+                  </ul>
+                </h4>
+              </div>
+            </GridContainer>
           </GridItem>
         </GridContainer>
       </div>

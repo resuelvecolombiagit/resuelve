@@ -11,6 +11,7 @@ import ViewCarousel from "@mui/icons-material/ViewCarousel";
 import makeStyles from "@mui/styles/makeStyles";
 
 import descriptionStyle from "/styles/jss/nextjs-material-kit-pro/pages/presentationSections/descriptionStyle.js";
+import Image from "next/image";
 
 const useStyles = makeStyles(descriptionStyle);
 
@@ -22,42 +23,59 @@ export default function SectionDescription() {
         <GridContainer justifyContent="center">
           <GridItem md={8} sm={8}>
             <h4 className={classes.description}>
-              NextJS Material Kit PRO is a Material-UI and NextJS Kit with a
-              fresh, new design inspired by Google{"'"}s Material Design. You
-              asked for it, so we built it. It{"'"}s a great pleasure to
-              introduce to you the material concepts in an easy to use and
-              beautiful set of components.
+              Con <b>Resuelve</b> puedes ralizar envío de tus paquetes a donde
+              desees! si eres persona natural o empresa, ponemos a tu
+              disposición un equipo que te brindará servicios al momento que
+              desees!
             </h4>
           </GridItem>
         </GridContainer>
         <div className={classes.features}>
           <GridContainer>
             <GridItem md={4} sm={4}>
-              <InfoArea
-                title="Huge Number of Components"
-                description="Every element that you need in a product comes built in as a component. All components fit perfectly with each other and can take variations in colour."
-                icon={Apps}
-                iconColor="danger"
-                vertical={true}
+              <Image
+                src={require("../../public/img/Paquete.png")}
+                alt="macbook"
+                layout="responsive"
               />
+              <div className="" style={{ marginTop: -120 }}>
+                <InfoArea
+                  title="Paquete sencillo"
+                  description="Perfecto para personas naturales."
+                  vertical={true}
+                  noIcon
+                />
+              </div>
             </GridItem>
             <GridItem md={4} sm={4}>
-              <InfoArea
-                title="Multi-Purpose Sections"
-                description="Putting together a page has never been easier than matching together sections. From team presentation to pricing options, you can easily customise and built your pages."
-                icon={ViewDay}
-                iconColor="primary"
-                vertical={true}
+              <Image
+                src={require("../../public/img/Paquetes.png")}
+                alt="macbook"
+                layout="responsive"
               />
+              <div className="" style={{ marginTop: -120 }}>
+                <InfoArea
+                  title="Paquetes mediano"
+                  description="Mypimes que quieran ampliar su mercado."
+                  vertical={true}
+                  noIcon
+                />
+              </div>
             </GridItem>
             <GridItem md={4} sm={4}>
-              <InfoArea
-                title="Example Pages"
-                description="If you want to get inspiration or just show something directly to your clients, you can jump start your development with our pre-built example pages."
-                icon={ViewCarousel}
-                iconColor="success"
-                vertical={true}
+              <Image
+                src={require("../../public/img/Paquete_grandes.png")}
+                alt="macbook"
+                layout="responsive"
               />
+              <div className="" style={{ marginTop: -120 }}>
+                <InfoArea
+                  title="Paquetes grandes"
+                  description="Empresas con mayor capacidad operativa"
+                  vertical={true}
+                  noIcon
+                />
+              </div>
             </GridItem>
           </GridContainer>
         </div>

@@ -39,7 +39,7 @@ export default function Parallax(props) {
     <div className={parallaxClasses} style={{ ...style }}>
       {/* Utiliza Image de Next.js para cargar y mostrar la imagen */}
       <Image
-        src={require("../../public/img/nextjs_header.jpg")} // Ruta relativa a la carpeta 'public'
+        src={require("../../public/img/Portada1.jpg")} // Ruta relativa a la carpeta 'public'
         alt="Next.js Header Image"
         layout="fill" // Esto ajustará la imagen al tamaño del contenedor
       />

@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 import Icon from "@mui/material/Icon";
 
 import styles from "/styles/jss/nextjs-material-kit-pro/components/infoStyle.js";
@@ -11,20 +11,20 @@ import styles from "/styles/jss/nextjs-material-kit-pro/components/infoStyle.js"
 const useStyles = makeStyles(styles);
 
 export default function InfoArea(props) {
-  const { title, description, iconColor, vertical, className } = props;
+  const { title, description, iconColor, vertical, className, noIcon } = props;
   const classes = useStyles();
   const iconWrapper = classNames({
     [classes.iconWrapper]: true,
     [classes[iconColor]]: true,
-    [classes.iconWrapperVertical]: vertical
+    [classes.iconWrapperVertical]: vertical,
   });
   const iconClasses = classNames({
     [classes.icon]: true,
-    [classes.iconVertical]: vertical
+    [classes.iconVertical]: vertical,
   });
   const infoAreaClasses = classNames({
     [classes.infoArea]: true,
-    [className]: className !== undefined
+    [className]: className !== undefined,
   });
   let icon = null;
   switch (typeof props.icon) {
@@ -37,7 +37,7 @@ export default function InfoArea(props) {
   }
   return (
     <div className={infoAreaClasses}>
-      <div className={iconWrapper}>{icon}</div>
+      {!noIcon && <div className={iconWrapper}>{icon}</div>}
       <div className={classes.descriptionWrapper}>
         <h4 className={classes.title}>{title}</h4>
         <div className={classes.description}>{description}</div>
@@ -47,7 +47,7 @@ export default function InfoArea(props) {
 }
 
 InfoArea.defaultProps = {
-  iconColor: "gray"
+  iconColor: "gray",
 };
 
 InfoArea.propTypes = {
@@ -61,8 +61,8 @@ InfoArea.propTypes = {
     "success",
     "info",
     "rose",
-    "gray"
+    "gray",
   ]),
   vertical: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
