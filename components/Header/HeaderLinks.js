@@ -114,6 +114,12 @@ export default function HeaderLinks(props) {
                 Registrate
               </a>
             </Link>,
+            <Link href="/login">
+              <a className={classes.dropdownLink}>
+                <Fingerprint className={classes.dropdownIcons} />
+                Inicia sesión
+              </a>
+            </Link>,
           ]}
         />
       </ListItem>

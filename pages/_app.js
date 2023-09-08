@@ -70,6 +70,11 @@ export default class MyApp extends App {
           />
           <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" />
           <title>Resuelve Colombia</title>
+          <link
+            rel="icon"
+            href={require("../public/img/icon.ico")}
+            sizes="any"
+          />
         </Head>
         <ThemeProvider theme={theme}>
           <StyledEngineProvider injectFirst>
