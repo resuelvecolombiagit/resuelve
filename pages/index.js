@@ -16,6 +16,7 @@ import Button from "/components/CustomButtons/Button.js";
 // sections for this page
 import SectionDescription from "/pages-sections/presentation-page/SectionDescription.js";
 import SectionComponents from "/pages-sections/presentation-page/SectionComponents.js";
+import SectionFeatures from "/pages-sections/pricing-page/SectionFeatures.js";
 import SectionCards from "/pages-sections/presentation-page/SectionCards.js";
 import SectionContent from "/pages-sections/presentation-page/SectionContent.js";
 import SectionSections from "/pages-sections/presentation-page/SectionSections.js";
@@ -52,6 +53,7 @@ export default function PresentationPage() {
         <SectionDescription />
         <SectionCards />
       </div>
+      <SectionFeatures />
       <Footer
         theme="white"
         content={

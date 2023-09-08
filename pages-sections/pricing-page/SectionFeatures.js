@@ -3,7 +3,7 @@ import React from "react";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import InfoArea from "/components/InfoArea/InfoArea.js";
-import makeStyles from '@mui/styles/makeStyles';
+import makeStyles from "@mui/styles/makeStyles";
 // @material-ui icons
 import CardMembership from "@mui/icons-material/CardMembership";
 import CardGiftCard from "@mui/icons-material/CardGiftcard";
@@ -18,42 +18,38 @@ export default function SectionFeatures() {
   const classes = useStyles();
   return (
     <div className={classes.featuresSection}>
-      <div className={classes.textCenter}>
-        <h3 className={classes.title}>Frequently Asked Questions</h3>
+      <div className={classes.textCenter} style={{ marginBottom: 50 }}>
+        <h3 className={classes.title}>Preguntas frecuentes</h3>
       </div>
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Can I cancel my subscription?"
-            description="Yes, you can cancel and perform other actions on your subscriptions via the My Account page."
-            icon={CardMembership}
-            iconColor="info"
+            title="¿Cómo puedo empezar mi suscripción?"
+            description="Registrate y contáctanos por nuestro formulario y nuestro equipo de servicio al cliente se encargará de activar tu suscripción."
+            noIcon
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Is there any discount for an annual subscription?"
-            description="Yes, we offer a 40% discount if you choose annual subscription for any plan."
-            icon={CardGiftCard}
-            iconColor="success"
+            title="¿Cuantos domiciliarion tengo a disposición?"
+            description="Si eres empresa y cuentas con suscripción, dependiendo del plan que adquieras tendrás la cantidad de domiciliarions, si erres personan natural, a convenirse según envío."
+            noIcon
           />
         </GridItem>
       </GridContainer>
       <GridContainer>
         <GridItem md={4} sm={4} className={classes.mlAuto}>
           <InfoArea
-            title="Which payment methods do you take?"
-            description="WooCommerce comes bundled with PayPal (for accepting credit card and PayPal account payments), BACS, and cash on delivery for accepting payments."
-            icon={AttachMoney}
-            iconColor="success"
+            title="¿Qué medios de pago poseen?"
+            description="Ponemos a tu disposición un convenio con Bancolombia para realizar el pago de todos tus servicios."
+            noIcon
           />
         </GridItem>
         <GridItem md={4} sm={4} className={classes.mrAuto}>
           <InfoArea
-            title="Any other questions we can answer?"
-            description="We are happy to help you. Contact us."
-            icon={QuestionAnswer}
-            iconColor="rose"
+            title="¿Puedo realizar envíos si soy persona natural?"
+            description="Si, puedes contactarnos y realizar envíos sin necesidad de adquirir una suscripción mensual"
+            noIcon
           />
         </GridItem>
       </GridContainer>
