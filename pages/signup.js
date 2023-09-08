@@ -27,21 +27,7 @@ const useStyles = makeStyles(signupPageStyle);
 export default function SignUpPage({ ...rest }) {
   const router = useRouter();
 
-  const [checked, setChecked] = React.useState([1]);
   const [loading, setLoading] = React.useState(false);
-
-  const handleToggle = (value) => {
-    const currentIndex = checked.indexOf(value);
-    const newChecked = [...checked];
-
-    if (currentIndex === -1) {
-      newChecked.push(value);
-    } else {
-      newChecked.splice(currentIndex, 1);
-    }
-
-    setChecked(newChecked);
-  };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);

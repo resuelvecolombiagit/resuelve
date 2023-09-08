@@ -119,28 +119,30 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Hidden lgDown>
-          <Button
-            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
-            color={"white"}
-            target="_blank"
-            className={classes.navButton}
-            round
-          >
-            <ShoppingCart className={classes.icons} />
-            servicios
-          </Button>
+          <Link href={"/login"}>
+            <Button
+              color={"white"}
+              target="_blank"
+              className={classes.navButton}
+              round
+            >
+              <ShoppingCart className={classes.icons} />
+              Pagar
+            </Button>
+          </Link>
         </Hidden>
         <Hidden mdUp>
-          <Button
-            href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
-            color={"info"}
-            target="_blank"
-            className={classes.navButton}
-            round
-          >
-            <ShoppingCart className={classes.icons} />
-            servicios
-          </Button>
+          <Link href={"/login"}>
+            <Button
+              color={"info"}
+              target="_blank"
+              className={classes.navButton}
+              round
+            >
+              <ShoppingCart className={classes.icons} />
+              Pagar
+            </Button>
+          </Link>
         </Hidden>
       </ListItem>
     </List>

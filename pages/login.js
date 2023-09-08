@@ -20,33 +20,60 @@ import Card from "/components/Card/Card.js";
 import CardBody from "/components/Card/CardBody.js";
 import CardHeader from "/components/Card/CardHeader.js";
 import CustomInput from "/components/CustomInput/CustomInput.js";
+import CardFooter from "/components/Card/CardFooter.js";
+import Swal from "sweetalert2";
 
 import loginPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/loginPageStyle.js";
+import Image from "next/image";
+
+import { useRouter } from "next/router";
 
 const useStyles = makeStyles(loginPageStyle);
 
 export default function LoginPage() {
+  const router = useRouter();
+
+  const [loading, setLoading] = React.useState(false);
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
   });
+
+  const handleSend = async () => {
+    setLoading(true);
+
+    setTimeout(async () => {
+      await Swal.fire(
+        "¡Incorrecto!",
+        "Las credenciales no corresponden a ninguna cuenta registrada...",
+        "error"
+      );
+
+      router.reload();
+
+      setLoading(false);
+    }, 3000);
+  };
+
   const classes = useStyles();
+
   return (
     <div>
       <Header
         absolute
         color="transparent"
-        brand="NextJS Material Kit PRO"
+        brand="Resuelve"
         links={<HeaderLinks dropdownHoverColor="info" />}
       />
-      <div
-        className={classes.pageHeader}
-        style={{
-          backgroundImage: "url('/img/bg7.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center",
-        }}
-      >
+      <div className={classes.pageHeader}>
+        <Image
+          src={require("../public/img/Portada4.jpg")}
+          alt="Background Image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top center"
+        />
         <div className={classes.container}>
           <GridContainer justifyContent="center">
             <GridItem xs={12} sm={8} md={4}>
@@ -57,60 +84,16 @@ export default function LoginPage() {
                     signup
                     className={classes.cardHeader}
                   >
-                    <h4 className={classes.cardTitle}>Login</h4>
-                    <div className={classes.socialLine}>
-                      <Button
-                        justIcon
-                        color="transparent"
-                        className={classes.iconButtons}
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fab fa-twitter" />
-                      </Button>
-                      <Button
-                        justIcon
-                        color="transparent"
-                        className={classes.iconButtons}
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fab fa-facebook" />
-                      </Button>
-                      <Button
-                        justIcon
-                        color="transparent"
-                        className={classes.iconButtons}
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i className="fab fa-google-plus-g" />
-                      </Button>
-                    </div>
+                    <h3 className={classes.cardTitle}>Inicio de sesión</h3>
                   </CardHeader>
-                  <p className={classes.description + " " + classes.textCenter}>
-                    Or Be Classical
-                  </p>
                   <CardBody signup>
-                    <CustomInput
-                      id="first"
-                      formControlProps={{
-                        fullWidth: true,
-                      }}
-                      inputProps={{
-                        placeholder: "First Name...",
-                        type: "text",
-                        startAdornment: (
-                          <InputAdornment position="start">
-                            <Face className={classes.inputIconsColor} />
-                          </InputAdornment>
-                        ),
-                      }}
-                    />
                     <CustomInput
                       id="email"
                       formControlProps={{
                         fullWidth: true,
                       }}
                       inputProps={{
-                        placeholder: "Email...",
+                        placeholder: "Correo electrónico...",
                         type: "email",
                         startAdornment: (
                           <InputAdornment position="start">
@@ -125,7 +108,7 @@ export default function LoginPage() {
                         fullWidth: true,
                       }}
                       inputProps={{
-                        placeholder: "Password",
+                        placeholder: "Contraseña",
                         type: "password",
                         startAdornment: (
                           <InputAdornment position="start">
@@ -138,10 +121,33 @@ export default function LoginPage() {
                       }}
                     />
                   </CardBody>
-                  <div className={classes.textCenter}>
-                    <Button simple color="primary" size="lg">
-                      Get started
-                    </Button>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <CardFooter>
+                      {!loading ? (
+                        <div
+                          style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            justifyContent: "center",
+                            alignItems: "center",
+                          }}
+                        >
+                          <Button color="primary" onClick={handleSend}>
+                            <b>Ingresar</b>
+                          </Button>
+                          <p>¿Olvidaste tu contraseña?</p>
+                        </div>
+                      ) : (
+                        <Button color="primary">Cargando...</Button>
+                      )}
+                    </CardFooter>
                   </div>
                 </form>
               </Card>
@@ -151,57 +157,8 @@ export default function LoginPage() {
         <Footer
           className={classes.footer}
           content={
-            <div>
-              <div className={classes.left}>
-                <List className={classes.list}>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/?ref=njsmkp-login"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      Creative Tim
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/presentation?ref=njsmkp-login"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      About us
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="http://blog.creative-tim.com/?ref=njsmkp-login"
-                      className={classes.block}
-                    >
-                      Blog
-                    </a>
-                  </ListItem>
-                  <ListItem className={classes.inlineBlock}>
-                    <a
-                      href="https://www.creative-tim.com/license?ref=njsmkp-login"
-                      target="_blank"
-                      className={classes.block}
-                    >
-                      Licenses
-                    </a>
-                  </ListItem>
-                </List>
-              </div>
-              <div className={classes.right}>
-                &copy; {1900 + new Date().getYear()} , made with{" "}
-                <Favorite className={classes.icon} /> by{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=njsmkp-login"
-                  target="_blank"
-                >
-                  Creative Tim
-                </a>{" "}
-                for a better web
-              </div>
+            <div className={classes.right}>
+              &copy; {1900 + new Date().getYear()} , Creado por Resuelve
             </div>
           }
         />
