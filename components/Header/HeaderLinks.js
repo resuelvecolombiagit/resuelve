@@ -95,121 +95,7 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent",
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link href="/presentation">
-              <a className={classes.dropdownLink}>
-                <LineStyle className={classes.dropdownIcons} /> Presentation
-                Page
-              </a>
-            </Link>,
-            <Link href="/components">
-              <a className={classes.dropdownLink}>
-                <Layers className={classes.dropdownIcons} />
-                All components
-              </a>
-            </Link>,
-            <a
-              href="https://demos.creative-tim.com/nextjs-material-kit-pro/documentation/tutorial?ref=njsmkp-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              <Icon className={classes.dropdownIcons}>content_paste</Icon>
-              Documentation
-            </a>,
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          hoverColor={dropdownHoverColor}
-          buttonText="Sections"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent",
-          }}
-          buttonIcon={ViewDay}
-          dropdownList={[
-            <Link href="/sections#headers">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "headers")}
-              >
-                <Dns className={classes.dropdownIcons} /> Headers
-              </a>
-            </Link>,
-            <Link href="/sections#features">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "features")}
-              >
-                <Build className={classes.dropdownIcons} /> Features
-              </a>
-            </Link>,
-            <Link href="/sections#blogs">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "blogs")}
-              >
-                <ListIcon className={classes.dropdownIcons} /> Blogs
-              </a>
-            </Link>,
-            <Link href="/sections#teams">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "teams")}
-              >
-                <People className={classes.dropdownIcons} /> Teams
-              </a>
-            </Link>,
-            <Link href="/sections#projects">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "projects")}
-              >
-                <Assignment className={classes.dropdownIcons} /> Projects
-              </a>
-            </Link>,
-            <Link href="/sections#pricing">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "pricing")}
-              >
-                <MonetizationOn className={classes.dropdownIcons} /> Pricing
-              </a>
-            </Link>,
-            <Link href="/sections#testimonials">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "testimonials")}
-              >
-                <Chat className={classes.dropdownIcons} /> Testimonials
-              </a>
-            </Link>,
-            <Link href="/sections#contacts">
-              <a
-                className={classes.dropdownLink}
-                onClick={(e) => smoothScroll(e, "contacts")}
-              >
-                <Call className={classes.dropdownIcons} /> Contacts
-              </a>
-            </Link>,
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          navDropdown
-          hoverColor={dropdownHoverColor}
-          buttonText="Examples"
+          buttonText="Navegación"
           buttonProps={{
             className: classes.navLink,
             color: "transparent",
@@ -294,7 +180,7 @@ export default function HeaderLinks(props) {
             className={classes.navButton}
             round
           >
-            <ShoppingCart className={classes.icons} /> buy now
+            <ShoppingCart className={classes.icons} /> Adquiere nuestros
           </Button>
         </Hidden>
         <Hidden mdUp>
@@ -305,7 +191,8 @@ export default function HeaderLinks(props) {
             className={classes.navButton}
             round
           >
-            <ShoppingCart className={classes.icons} /> buy now
+            <ShoppingCart className={classes.icons} /> Adquiere nuestros
+            servicios
           </Button>
         </Hidden>
       </ListItem>
